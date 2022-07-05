@@ -28,8 +28,6 @@ public class TestInit {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public void fullScreen() {
@@ -40,6 +38,11 @@ public class TestInit {
     protected String getURL() {
         return driver.getCurrentUrl();
 
+    }
+
+    public void goToSite(String url) {
+        driver.get(url);
+        driver.manage().window().maximize();
     }
 }
 

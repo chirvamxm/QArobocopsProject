@@ -27,5 +27,9 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
     }
+
+    public void implicitlyWait() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
 }
 
