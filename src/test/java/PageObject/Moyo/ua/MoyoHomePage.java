@@ -62,4 +62,60 @@ public class MoyoHomePage extends BasePage {
     public  WebElement getPlayVideoBtn() {
         return getElementByXpath("//div[@class='video-reviews_item slick-slide slick-current slick-active']");
     }
+
+    public WebElement getMenuBtn() {
+        return getElementByXpath("//div[@class='header_catalog_btn js-menu-btn']");
+    }
+
+    public WebElement getMenuCategoryApple() {
+        return getElementByXpath("//a[@class='menu_link item-6961']");
+    }
+
+    public WebElement getMenuCategorySmartphones() {
+        return getElementByXpath("//a[@class='menu_link item-2853']");
+    }
+
+    public WebElement getMenuCategoryNotebooks() {
+        return getElementByXpath("//a[@class='menu_link item-3309']");
+    }
+
+    public WebElement getMenuCategoryGadgets() {
+        return getElementByXpath("//a[@class='menu_link item-2915']");
+    }
+
+    public WebElement getMenuCategoryTablets() {
+        return getElementByXpath("//a[@class='menu_link item-6512']");
+    }
+
+    public WebElement getMenuCategoryPhotoVideo() {
+        return getElementByXpath("//a[@class='menu_link item-2981']");
+    }
+
+    public WebElement getMenuCategoryTvAudio() {
+        return getElementByXpath("//a[@class='menu_link item-7759']");
+    }
+
+    public WebElement getMenuCategoryHomeEquipment() {
+        return getElementByXpath("//a[@class='menu_link item-4439']");
+    }
+
+    public WebElement getMenuCategoryAcsessor() {
+        return getElementByXpath("//a[@class='menu_link item-3325']");
+    }
+
+    public WebElement getMenuCategoryHomeGoods() {
+        return getElementByXpath("//a[@class='menu_link item-4951']");
+    }
+
+    public WebElement getMenuCategoryInstruments() {
+        return getElementByXpath("//a[@class='menu_link item-4910']");
+    }
+
+    public WebElement getMenuCategoryKidsWorld() {
+        return getElementByXpath("//a[@class='menu_link item-5513']");
+    }
+
+    public WebElement getMenuCategoryGameZone() {
+        return getElementByXpath("//a[@class='menu_link item-2914']");
+    }
 }
