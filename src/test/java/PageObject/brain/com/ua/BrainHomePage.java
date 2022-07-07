@@ -16,9 +16,13 @@ public class BrainHomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Ноутбуки')]"));
     }
 
+    public WebElement getAccessories() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Комплектуючі')]"));
+    }
+
 
     // common tools
-    public WebElement getSearchField(){
+    public WebElement getSearchField() {
         return driver.findElement(By.xpath("//div[@class='header-bottom']//input[@class='quick-search-input']"));
     }
 
