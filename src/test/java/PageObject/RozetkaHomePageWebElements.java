@@ -3,6 +3,8 @@ package PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class RozetkaHomePageWebElements extends BasePage {
 
     public RozetkaHomePageWebElements(WebDriver driver) {
@@ -12,6 +14,10 @@ public class RozetkaHomePageWebElements extends BasePage {
     //HEADER
     public WebElement getProfileBtn() {
         return getElementByXpath("//li[@class='header-actions__item header-actions__item--user']");
+    }
+
+    public WebElement getSearchField() {
+        return getElementByXpath("//input[@name='search']");
     }
 
     // SIGN IN WINDOW
@@ -46,5 +52,11 @@ public class RozetkaHomePageWebElements extends BasePage {
 
     public WebElement alertUserWithThisNumberAlreadyRegistered() {
         return getElementByXpath("//p[@class='validation-message ng-star-inserted']");
+    }
+
+    //CART WINDOW
+
+    public List<WebElement> AddBookArtOfWarBtn() {
+        return getElementsByXpath("//img[@alt='Мистецтво війни - Сунь-дзи (9786176791454)']");
     }
 }
