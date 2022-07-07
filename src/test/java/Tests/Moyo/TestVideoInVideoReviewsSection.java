@@ -16,10 +16,10 @@ public class TestVideoInVideoReviewsSection extends TestInit {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,3500)", "");
-        sleep(5);
+        sleep(1);
         moyoHomePage.getPlayVideoBtn().click();
         ArrayList<String> tabs2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
-        Assert.assertTrue(getURL().contains("watch"));
+        Assert.assertTrue(getURL().contains("youtube"));
     }
 }
