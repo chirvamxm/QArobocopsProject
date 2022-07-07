@@ -1,4 +1,4 @@
-package Tests.Epicentr;
+package Tests.Rozetka;
 
 import PageObject.RozetkaHomePageWebElements;
 import Tests.TestInit;
