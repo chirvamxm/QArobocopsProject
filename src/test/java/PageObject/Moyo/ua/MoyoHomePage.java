@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class MoyoHomePage extends BasePage {
     public MoyoHomePage(WebDriver driver) {
         super(driver);
@@ -41,10 +43,20 @@ public class MoyoHomePage extends BasePage {
     public WebElement getMoyoTradeBtn() {
         return getElementByXpath("//li[@class='header_nav_item js-exchange-switch-color']");
     }
+
     public WebElement getSearchPhoneOrEmailBtn() {
         return getElementByXpath("//input[@placeholder='Телефон или email']");
     }
+
     public WebElement getDropBoxEnterBtn() {
         return getElementByXpath("//button[@class='btn js-auth-form-submit']");
+    }
+
+    public WebElement getSearchFieldBtn() {
+        return getElementByXpath("//input[@id='search-input']");
+    }
+
+    public List<WebElement> getComparesBtn() {
+        return getElementsByXpath("//div[@data-async='L3Byb2R1Y3RzL2NvbXBhcmUv']");
     }
 }
