@@ -20,6 +20,10 @@ public class BrainHomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Комплектуючі')]"));
     }
 
+    public WebElement getSmartphones() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Смартфони')]"));
+    }
+
 
     // common tools
     public WebElement getSearchField() {
