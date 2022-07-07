@@ -1,10 +1,9 @@
-package PageObject;
+package PageObject.Moyo.ua;
 
+import PageObject.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class MoyoHomePage extends BasePage {
     public MoyoHomePage(WebDriver driver) {
@@ -37,5 +36,9 @@ public class MoyoHomePage extends BasePage {
 
     public WebElement getRegisterBtn() {
         return getElementByXpath("//button[@class='btn js-auth-form-submit']");
+    }
+
+    public WebElement getMoyoTradeBtn() {
+        return getElementByXpath("//li[@class='header_nav_item js-exchange-switch-color']");
     }
 }

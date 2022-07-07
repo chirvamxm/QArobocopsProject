@@ -1,6 +1,6 @@
 package Tests.Moyo;
 
-import PageObject.MoyoHomePage;
+import PageObject.Moyo.ua.MoyoHomePage;
 import Tests.TestInit;
 import org.testng.annotations.Test;
 
