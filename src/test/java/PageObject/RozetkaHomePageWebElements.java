@@ -59,4 +59,19 @@ public class RozetkaHomePageWebElements extends BasePage {
     public List<WebElement> AddBookArtOfWarBtn() {
         return getElementsByXpath("//img[@alt='Мистецтво війни - Сунь-дзи (9786176791454)']");
     }
+
+    public WebElement mailOrPhoneField() {
+        return getElementByXpath("//input[@id='auth_email']"); //поле для вводу Пошти або номеру
+    }
+
+    public WebElement passwordField() {
+        return getElementByXpath("//input[@id='auth_pass']"); //поле для вводу паролю
+    }
+    public WebElement addNumber() {
+        return getElementByXpath("//button[@class='button button--green button--medium']");
+    }
+    public WebElement getSignInBtn(){
+        return getElementByXpath("//*[@class='modal__heading']");
+    }
+
 }
