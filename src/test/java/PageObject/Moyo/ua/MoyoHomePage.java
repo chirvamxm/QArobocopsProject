@@ -41,4 +41,10 @@ public class MoyoHomePage extends BasePage {
     public WebElement getMoyoTradeBtn() {
         return getElementByXpath("//li[@class='header_nav_item js-exchange-switch-color']");
     }
+    public WebElement getSearchPhoneOrEmailBtn() {
+        return getElementByXpath("//input[@placeholder='Телефон или email']");
+    }
+    public WebElement getDropBoxEnterBtn() {
+        return getElementByXpath("//button[@class='btn js-auth-form-submit']");
+    }
 }
