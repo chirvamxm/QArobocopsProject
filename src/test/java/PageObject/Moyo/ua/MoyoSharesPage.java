@@ -23,7 +23,16 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//*[@for='types_2']");
     }
 
-    public WebElement getSeasonSale() {
+    public WebElement getSeasonSaleBtn() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
+    }
+
+    // Smartphone section
+    public WebElement getSmartphoneMobilePhoneBtn() {
+        return getElementByXpath("//*[@for='types_2']");
+    }
+
+    public WebElement getSmartTradeBtn() {
+        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1747/77_387x255_1654242387.jpg']");
     }
 }
