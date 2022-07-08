@@ -8,24 +8,23 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCategoryShare extends TestInit {
+public class TestShareCategoryDiscount extends TestInit {
 
     @Test
-    public void testCategoryShare() {
+    public void testShareCategoryDiscount() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoSharesPage moyoSharesPage = new MoyoSharesPage(driver);
-        MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
+        MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
 
         goToSite("https://www.moyo.ua/");
         sleep(1);
         moyoHomePage.getSharesBtn().click();
         js.executeScript("window.scrollBy(0,100)", "");
         sleep(1);
-        moyoSharesPage.getGiftBtn().click();
+        moyoSharesPage.getDiscountBtn().click();
         sleep(1);
-        moyoSharesPage.getPromoStikerSweetTVBtn().click();
-        sleep(1);
+        moyoSharesPage.getSeasonSale().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }

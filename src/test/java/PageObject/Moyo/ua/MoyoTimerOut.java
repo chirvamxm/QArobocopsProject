@@ -4,8 +4,8 @@ import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class MoyoPromoStikerPage extends BasePage {
-    public MoyoPromoStikerPage(WebDriver driver) {
+public class MoyoTimerOut extends BasePage {
+    public MoyoTimerOut(WebDriver driver) {
         super(driver);
     }
 

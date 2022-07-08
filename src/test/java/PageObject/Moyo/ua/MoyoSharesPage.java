@@ -9,12 +9,21 @@ public class MoyoSharesPage extends BasePage {
         super(driver);
     }
 
+    // gift section
     public WebElement getGiftBtn() {
         return getElementByXpath("//*[@for='types_1']");
     }
 
-    // gift section
     public WebElement getPromoStikerSweetTVBtn() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/77_387x255_1653320721.jpg']");
+    }
+
+    // discount section
+    public WebElement getDiscountBtn() {
+        return getElementByXpath("//*[@for='types_2']");
+    }
+
+    public WebElement getSeasonSale() {
+        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
     }
 }
