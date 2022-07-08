@@ -26,4 +26,13 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getSeasonSale() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
     }
+
+    // raffle section
+    public WebElement getRaffleBtn() {
+        return getElementByXpath("//*[@for='types_4']");
+    }
+
+    public WebElement getRaffle4Console() {
+        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/54_387x255_1657282506.jpg']");
+    }
 }
