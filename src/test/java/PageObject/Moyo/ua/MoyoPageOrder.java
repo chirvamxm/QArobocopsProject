@@ -5,8 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.nio.channels.WritableByteChannel;
-
 public class MoyoPageOrder extends BasePage {
     public MoyoPageOrder(WebDriver driver) {
         super(driver);
