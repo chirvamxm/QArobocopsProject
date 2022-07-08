@@ -1,9 +1,9 @@
 package Tests.Moyo;
 
 import PageObject.Moyo.ua.MoyoHomePage;
-import PageObject.MoyoPageBasket;
-import PageObject.MoyoPageCategoryApple;
-import PageObject.MoyoPageOrder;
+import PageObject.Moyo.ua.MoyoPageBasket;
+import PageObject.Moyo.ua.MoyoPageCategoryApple;
+import PageObject.Moyo.ua.MoyoPageOrder;
 import Tests.TestInit;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;

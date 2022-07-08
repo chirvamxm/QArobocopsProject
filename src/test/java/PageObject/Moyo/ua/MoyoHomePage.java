@@ -59,7 +59,8 @@ public class MoyoHomePage extends BasePage {
     public List<WebElement> getComparesBtn() {
         return getElementsByXpath("//div[@data-async='L3Byb2R1Y3RzL2NvbXBhcmUv']");
     }
-    public  WebElement getPlayVideoBtn() {
+
+    public WebElement getPlayVideoBtn() {
         return getElementByXpath("//div[@class='video-reviews_item slick-slide slick-current slick-active']");
     }
 
@@ -117,5 +118,9 @@ public class MoyoHomePage extends BasePage {
 
     public WebElement getMenuCategoryGameZone() {
         return getElementByXpath("//a[@class='menu_link item-2914']");
+    }
+
+    public WebElement getSharesBtn() {
+        return getElementByXpath("//li[@class='header_nav_item header_nav_item--actions ']");
     }
 }
