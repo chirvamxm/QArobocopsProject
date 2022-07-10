@@ -77,7 +77,7 @@ public class RozetkaHomePageWebElements extends BasePage {
     }
 
     public WebElement getMenuCategoryGoodsForGamers() {
-        return getElementByXpath("//a[@class='menu-categories__link'] [contains(text(),'Товары для геймеров')]");
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/game-zone/c80261/']");
     }
 
     public WebElement ukrainianLanguageBtn() {
@@ -88,4 +88,9 @@ public class RozetkaHomePageWebElements extends BasePage {
         return getElementByXpath("//span[@class='exponea-close-cross']");
     }
 
+
+    public WebElement getCatalog (){
+        return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
+
+    }
 }

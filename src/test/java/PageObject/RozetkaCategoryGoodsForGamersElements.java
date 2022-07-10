@@ -10,7 +10,7 @@ public class RozetkaCategoryGoodsForGamersElements extends BasePage {
     }
 
     public WebElement getGameLaptopsAsus() {
-        return getElementByXpath("//span[contains(text (),' Ігрові ноутбуки Asus ')]");
+        return getElementByXpath("//a[@class='popular-category'] [@href='https://rozetka.com.ua/notebooks/c80004/preset=game;producer=asus/']");
     }
 
     public WebElement getAsusLaptop() {

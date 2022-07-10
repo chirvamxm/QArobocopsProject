@@ -19,13 +19,14 @@ public class TestsCart extends TestInit {
 
         goToSite("https://rozetka.com.ua/");
         rozetkaHomePageWebElements.closeWindow().click();
-        rozetkaHomePageWebElements.ukrainianLanguageBtn().click();
+        rozetkaHomePageWebElements.getCatalog().click();
         rozetkaHomePageWebElements.getMenuCategoryGoodsForGamers().click();
         rozetkaCategoryGoodsForGamersElements.getGameLaptopsAsus().click();
         rozetkaCategoryGoodsForGamersElements.getAsusLaptop().click();
         rozetkaItemsPageWebElements.getAddToCartBtn().click();
-        rozetkaHomePageWebElements.getQuantity(5, rozetkaCartElement.getProductQuantityPlus());
-        Assert.assertTrue(rozetkaCartElement.theNumberOfUnitsAudit(6).isDisplayed());
+        rozetkaItemsPageWebElements.getToMySelectedGoods().click();
+        //rozetkaHomePageWebElements.getQuantity(5, rozetkaCartElement.getProductQuantityPlus());
+        //Assert.assertTrue(rozetkaCartElement.theNumberOfUnitsAudit(6).isDisplayed());
 
     }
 
