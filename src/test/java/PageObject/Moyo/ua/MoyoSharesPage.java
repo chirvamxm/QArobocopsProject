@@ -27,11 +27,23 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
     }
 
+    // raffle section
+    public WebElement getRaffleBtn() {
+        return getElementByXpath("//*[@for='types_4']");
+    }
+
+    public WebElement getRaffle4Console() {
+        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/54_387x255_1657282506.jpg']");
+    }
+
     //Installment section
     public WebElement getInstallment() {
         return getElementByXpath("//*[@for='types_3']");
     }
+
     public WebElement getCreditSony0() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/28_387x255_1655995696.jpg']");
     }
+
 }
+
