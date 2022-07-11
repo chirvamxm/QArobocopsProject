@@ -10,9 +10,29 @@ public class CategoryGoodsForGamersElements extends BasePage {
         super(driver);
     }
 
+    //CATEGORIES
+
+    public WebElement getGamingPeripheralsBtn() {
+        return getElementByXpath("//img[@src='https://video.rozetka.com.ua/img_superportal/gaming/gaming-main/igrovaya_periferiya.jpg']");
+    }
+
     public WebElement getGameLaptopsAsus() {
         return getElementByXpath("//a[@class='popular-category'] [@href='https://rozetka.com.ua/notebooks/c80004/preset=game;producer=asus/']");
     }
+
+    // GAMING PERIPHERAL CATEGORY
+
+    public WebElement getManipulatorAndJoystickBtn() {
+        return getElementByXpath("//img[@alt='Манипуляторы, джойстики']");
+    }
+
+    //MANIPULATOR AND JOYSTICK ITEMS
+
+    public WebElement getCameraPS5DigitalEditionBtn() {
+        return getElementByXpath("//div[@data-goods-id='223268545']");
+    }
+
+    //LAPTOP ITEMS
 
     public WebElement getAsusLaptop() {
         return getElementByXpath("//span[@class='goods-tile__title']");
