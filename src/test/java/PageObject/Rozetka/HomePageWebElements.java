@@ -92,4 +92,14 @@ public class HomePageWebElements extends BasePage {
     public WebElement closeWindow() {
         return getElementByXpath("//span[@class='exponea-close-cross']");
     }
+
+    //APPS SECTION
+
+    public WebElement getGoogleAppBtn() {
+        return getElementByXpath("//img[@alt='Google Play']");
+    }
+
+    public WebElement getAppleAppBtn() {
+        return getElementByXpath("//img[@alt='AppStore']");
+    }
 }
