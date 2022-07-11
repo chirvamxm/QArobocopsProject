@@ -12,6 +12,7 @@ public class CartWebElements extends BasePage {
     public WebElement getProductQuantityPlus() {
         return getElementByXpath("//button[@class='button button_color_white button_size_medium cart-counter__button'] [@data-testid='cart-counter-increment-button']");
     }
+
     public WebElement getCloseCartBtn() {
         return getElementByXpath("//button[@class='modal__close']");
     }
@@ -20,12 +21,12 @@ public class CartWebElements extends BasePage {
         return getElementByXpath("//button[@class='button button--white button--small popup-menu__toggle popup-menu__toggle--context']");
     }
 
-    public WebElement getDeleteAllFromCartBtn(){
+    public WebElement getDeleteAllFromCartBtn() {
         return getElementByXpath("//button[@class='button button--medium button--with-icon button--link context-menu-actions__button']");
     }
 
 
-    public WebElement emptyCart(){
+    public WebElement emptyCart() {
         return getElementByXpath("//*[text()='Корзина пуста']");
     }
 
@@ -37,6 +38,5 @@ public class CartWebElements extends BasePage {
     public WebElement theNumberOfUnitsAudit(int number) {
         return getElementByXpath("//input[@class='cart-counter__input ng-pristine ng-valid ng-touched']");
     }
-
 }
 
