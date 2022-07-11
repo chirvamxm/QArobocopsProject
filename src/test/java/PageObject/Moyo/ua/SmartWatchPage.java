@@ -10,7 +10,7 @@ public class SmartWatchPage extends BasePage {
     }
 
     public WebElement getWatchImgBlackBtn() {
-        return getElementByXpath("//div[@data-id='503596']");
+        return getElementByXpath("//img[@alt='Смарт-часы 2E Alpha X 46 mm Black-Silver']");
     }
 
     public WebElement getWatchImgSilverBtn() {

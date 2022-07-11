@@ -4,6 +4,7 @@ import PageObject.Moyo.ua.MoyoHomePage;
 import PageObject.Moyo.ua.MoyoTradePage;
 import Tests.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestMoyoTradeFunction extends TestInit {
@@ -27,5 +28,6 @@ public class TestMoyoTradeFunction extends TestInit {
         js.executeScript("window.scrollBy(0,1000)", "");
         sleep(3);
         moyoTradePage.getFrameNoScratchBtn().click();
+        Assert.assertTrue(moyoTradePage.showPriseTabla().isDisplayed());
     }
 }
