@@ -1,8 +1,8 @@
 package Tests.Rozetka;
 
-import PageObject.RozetkaBooksPageWebElements;
-import PageObject.RozetkaHomePageWebElements;
-import PageObject.RozetkaItemsPageWebElements;
+import PageObject.Rozetka.BooksPageWebElements;
+import PageObject.Rozetka.HomePageWebElements;
+import PageObject.Rozetka.ItemsPageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,9 +12,9 @@ public class TestAddBookToCart extends TestInit {
     @Test
     public void testAddBookToCart() {
 
-        RozetkaHomePageWebElements rozetkaHomePageWebElements = new RozetkaHomePageWebElements(driver);
-        RozetkaBooksPageWebElements rozetkaBooksPageWebElements = new RozetkaBooksPageWebElements(driver);
-        RozetkaItemsPageWebElements rozetkaItemsPageWebElements = new RozetkaItemsPageWebElements(driver);
+        HomePageWebElements rozetkaHomePageWebElements = new HomePageWebElements(driver);
+        BooksPageWebElements rozetkaBooksPageWebElements = new BooksPageWebElements(driver);
+        ItemsPageWebElements rozetkaItemsPageWebElements = new ItemsPageWebElements(driver);
 
         goToSite("https://rozetka.com.ua/ua/");
         rozetkaHomePageWebElements.getSearchField().sendKeys("Книги\n");

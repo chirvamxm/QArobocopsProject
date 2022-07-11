@@ -1,6 +1,6 @@
 package Tests.Rozetka;
 
-import PageObject.RozetkaHomePageWebElements;
+import PageObject.Rozetka.HomePageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,17 +10,17 @@ public class TestSignUp extends TestInit {
     @Test
     public void testSignUp() {
 
-        RozetkaHomePageWebElements rozetkaHomePageWebElements = new RozetkaHomePageWebElements(driver);
+        HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 
         goToSite("https://rozetka.com.ua/ua/");
-        rozetkaHomePageWebElements.getProfileBtn().click();
-        rozetkaHomePageWebElements.getSignUpBtn().click();
-        rozetkaHomePageWebElements.getSignUpFirstNameField().sendKeys("Максим");
-        rozetkaHomePageWebElements.getSignUpLastNameField().sendKeys("Чирва");
-        rozetkaHomePageWebElements.getSignUpNumberField().sendKeys("637444757");
-        rozetkaHomePageWebElements.getSignUpEmailField().sendKeys("chirvamax@ukr.net");
-        rozetkaHomePageWebElements.getSignUpPasswordField().sendKeys("Qwerty12345");
-        rozetkaHomePageWebElements.getGoSignUpBtn().click();
-        Assert.assertTrue(rozetkaHomePageWebElements.alertUserWithThisNumberAlreadyRegistered().isDisplayed());
+        homePageWebElements.getProfileBtn().click();
+        homePageWebElements.getSignUpBtn().click();
+        homePageWebElements.getSignUpFirstNameField().sendKeys("Максим");
+        homePageWebElements.getSignUpLastNameField().sendKeys("Чирва");
+        homePageWebElements.getSignUpNumberField().sendKeys("637444757");
+        homePageWebElements.getSignUpEmailField().sendKeys("chirvamax@ukr.net");
+        homePageWebElements.getSignUpPasswordField().sendKeys("Qwerty12345");
+        homePageWebElements.getGoSignUpBtn().click();
+        Assert.assertTrue(homePageWebElements.alertUserWithThisNumberAlreadyRegistered().isDisplayed());
     }
 }
