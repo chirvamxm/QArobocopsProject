@@ -1,11 +1,12 @@
-package PageObject;
+package PageObject.Rozetka;
 
+import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class RozetkaCategoryGoodsForGamersElements extends BasePage {
+public class CategoryGoodsForGamersElements extends BasePage {
 
-    public RozetkaCategoryGoodsForGamersElements(WebDriver driver) {
+    public CategoryGoodsForGamersElements(WebDriver driver) {
         super(driver);
     }
 

@@ -1,13 +1,14 @@
-package PageObject;
+package PageObject.Rozetka;
 
+import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class RozetkaHomePageWebElements extends BasePage {
+public class HomePageWebElements extends BasePage {
 
-    public RozetkaHomePageWebElements(WebDriver driver) {
+    public HomePageWebElements(WebDriver driver) {
         super(driver);
     }
 
@@ -20,9 +21,29 @@ public class RozetkaHomePageWebElements extends BasePage {
         return getElementByXpath("//input[@name='search']");
     }
 
+    public WebElement getCatalog() {
+        return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
+    }
+
+    public WebElement ukrainianLanguageBtn() {
+        return getElementByXpath("//span[@class='lang__link lang__link--active ng-star-inserted']");
+    }
+
     // SIGN IN WINDOW
     public WebElement getSignUpBtn() {
         return getElementByXpath("//button[@class='auth-modal__register-link button button--link ng-star-inserted']");
+    }
+
+    public WebElement mailOrPhoneField() {
+        return getElementByXpath("//input[@id='auth_email']"); //поле для вводу Пошти або номеру
+    }
+
+    public WebElement passwordField() {
+        return getElementByXpath("//input[@id='auth_pass']"); //поле для вводу паролю
+    }
+
+    public WebElement getSignInBtn() {
+        return getElementByXpath("//*[@class='modal__heading']");
     }
 
     // SIGN UP WINDOW
@@ -60,37 +81,13 @@ public class RozetkaHomePageWebElements extends BasePage {
         return getElementsByXpath("//img[@alt='Мистецтво війни - Сунь-дзи (9786176791454)']");
     }
 
-    public WebElement mailOrPhoneField() {
-        return getElementByXpath("//input[@id='auth_email']"); //поле для вводу Пошти або номеру
-    }
-
-    public WebElement passwordField() {
-        return getElementByXpath("//input[@id='auth_pass']"); //поле для вводу паролю
-    }
-
-    public WebElement addNumber() {
-        return getElementByXpath("//button[@class='button button--green button--medium']");
-    }
-
-    public WebElement getSignInBtn() {
-        return getElementByXpath("//*[@class='modal__heading']");
-    }
+    //CATALOGUE SECTION
 
     public WebElement getMenuCategoryGoodsForGamers() {
         return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/game-zone/c80261/']");
     }
 
-    public WebElement ukrainianLanguageBtn() {
-        return getElementByXpath("//span[@class='lang__link lang__link--active ng-star-inserted']");
-    }
-
     public WebElement closeWindow() {
         return getElementByXpath("//span[@class='exponea-close-cross']");
-    }
-
-
-    public WebElement getCatalog (){
-        return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
-
     }
 }
