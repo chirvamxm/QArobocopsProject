@@ -80,5 +80,14 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getSmartTradeTVBtn() {
         return getElementByXpath("//img[@alt='Смарт обмін для ваших телевізорів']");
     }
+
+    //ComputerHardware category
+    public WebElement getComputerHardwareBtn() {
+        return getElementByXpath("//*[@for='categories_3309']");
+    }
+
+    public WebElement getRestoreBuild2000() {
+        return getElementByXpath("//img[@alt='Рідні стіни, рідним людям. 2000 грн. від покупки віддаємо на відновлення будинків.']");
+    }
 }
 
