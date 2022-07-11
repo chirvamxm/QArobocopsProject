@@ -17,7 +17,7 @@ public class MoyoTradePage extends BasePage {
     }
 
     public WebElement getSmartphoneBtn() {
-        return getElementByXpath("//div[@id='react-select-2-option-0']");
+        return getElementByXpath("//div[@id='react-select-2-option-4']");
     }
 
     public WebElement getManufacturerBtn() {
@@ -46,6 +46,10 @@ public class MoyoTradePage extends BasePage {
 
     public WebElement getFrameNoScratchBtn() {
         return getElementByXpath("//img[@src='https://www.moyo.ua/images/tradeIn/smartphone/body/smartfon_2.png']");
+    }
+
+    public WebElement showPriseTabla() {
+        return getElementByXpath("//*[text()='2900']");
     }
 }
 

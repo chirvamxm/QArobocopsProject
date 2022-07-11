@@ -123,4 +123,7 @@ public class MoyoHomePage extends BasePage {
     public WebElement getSharesBtn() {
         return getElementByXpath("//li[@class='header_nav_item header_nav_item--actions ']");
     }
+    public WebElement showUserRegistered() {
+        return getElementByXpath("//div[text()='Пользователь с таким e-mail адресом уже существует']");
+    }
 }
