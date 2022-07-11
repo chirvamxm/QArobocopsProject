@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class MoyoHomePage extends BasePage {
+
     public MoyoHomePage(WebDriver driver) {
         super(driver);
     }
@@ -33,7 +34,7 @@ public class MoyoHomePage extends BasePage {
     }
 
     public WebElement getAgreeWithRegBtn() {
-        return driver.findElement(By.cssSelector("#agree_with_reg"));
+        return getElementByCssSelector("#agree_with_reg");
     }
 
     public WebElement getRegisterBtn() {

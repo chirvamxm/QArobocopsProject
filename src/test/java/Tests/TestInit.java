@@ -4,18 +4,30 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
 
+    //type name of the browser you're using in this variable (chrome or firefox)
+    private static final String BROWSER_NAME = "chrome";
+
     public WebDriver driver;
 
     @BeforeMethod
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-
+    public void setup() throws Exception {
+        switch (BROWSER_NAME) {
+            case ("chrome") -> {
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+            }
+            case ("firefox") -> {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+            }
+            default -> throw new Exception("You chose not valid browser!");
+        }
     }
 
     @AfterMethod
@@ -30,11 +42,6 @@ public class TestInit {
             e.printStackTrace();
         }
     }
-
-    public void fullScreen() {
-        driver.manage().window().maximize();
-    }
-
 
     protected String getURL() {
         return driver.getCurrentUrl();
