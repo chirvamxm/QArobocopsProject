@@ -21,6 +21,10 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//input[@name='search']");
     }
 
+    public WebElement getSearchingBtn() {
+        return getElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted']");
+    }
+
     public WebElement getCatalogueBtn() {
         return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
     }
@@ -77,12 +81,6 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement alertUserWithThisNumberAlreadyRegistered() {
         return getElementByXpath("//p[@class='validation-message ng-star-inserted']");
-    }
-
-    //CART WINDOW
-
-    public List<WebElement> AddBookArtOfWarBtn() {
-        return getElementsByXpath("//img[@alt='Мистецтво війни - Сунь-дзи (9786176791454)']");
     }
 
     //CATALOGUE SECTION

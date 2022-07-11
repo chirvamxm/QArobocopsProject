@@ -4,6 +4,8 @@ import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class BooksPageWebElements extends BasePage {
 
     public BooksPageWebElements(WebDriver driver) {
@@ -18,7 +20,10 @@ public class BooksPageWebElements extends BasePage {
 
     //TRAVELING AND SPORT CATEGORY
 
-    public WebElement getArtOfWarBookBtn() {
-        return getElementByXpath("//div[@data-goods-id='15039699']");
+    public List<WebElement> getBigAtlasOfTheWorldBtn() {
+        return getElementsByXpath("//a[@title='Великий ілюстрований атлас Світу (9789669362568)']");
     }
+
+
+
 }
