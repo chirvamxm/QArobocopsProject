@@ -62,5 +62,13 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getSale55OnTheChildrenToysBtn() {
         return getElementByXpath("//img[@alt='Знижки до 55% на іграшки та дитячі товари']");
     }
+
+    //SmartGadget category
+    public WebElement getSmartGadgetBtn() {
+        return getElementByXpath("//*[@for='categories_2915']");
+    }
+    public WebElement getSmartTradeForWatchBtn() {
+        return getElementByXpath("//img[@alt='Смарт обмін для вашого смарт-годинника']");
+    }
 }
 
