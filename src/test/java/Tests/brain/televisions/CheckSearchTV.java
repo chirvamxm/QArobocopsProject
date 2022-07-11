@@ -1,4 +1,4 @@
-package Tests.brain.tests.computers.televisions;
+package Tests.brain.televisions;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainHomePage;
@@ -8,10 +8,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_16 extends TestInit {
+public class CheckSearchTV extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkSearchTV() {
 
         goToSite("https://brain.com.ua/ukr/");
         sleep(2);

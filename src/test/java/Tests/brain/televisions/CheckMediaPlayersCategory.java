@@ -1,25 +1,28 @@
-package Tests.brain.tests.computers.smartphones;
+package Tests.brain.televisions;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.*;
+import PageObject.brain.com.ua.BrainHomePage;
+import PageObject.brain.com.ua.BrainOrderPage;
+import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.BrainTelevisionsPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_09 extends TestInit {
+public class CheckMediaPlayersCategory extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkMediaPlayersCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getSmartphones().click();
+        homePage.getTVs().click();
 
-        BrainSmartphonesPage smartphonesPage = new BrainSmartphonesPage(driver);
-        smartphonesPage.getMobiles().click();
+        BrainTelevisionsPage televisionsPage = new BrainTelevisionsPage(driver);
+        televisionsPage.getMediaPlayers().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);

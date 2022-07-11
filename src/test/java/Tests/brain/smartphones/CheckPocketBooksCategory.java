@@ -1,28 +1,28 @@
-package Tests.brain.tests.computers.accessories;
+package Tests.brain.smartphones;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainAccessoriesPage;
 import PageObject.brain.com.ua.BrainHomePage;
 import PageObject.brain.com.ua.BrainOrderPage;
 import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.BrainSmartphonesPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_07 extends TestInit {
+public class CheckPocketBooksCategory extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkPocketBooksCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getAccessories().click();
+        homePage.getSmartphones().click();
 
-        BrainAccessoriesPage accessoriesPage = new BrainAccessoriesPage(driver);
-        accessoriesPage.getMotherBoards().click();
+        BrainSmartphonesPage smartphonesPage = new BrainSmartphonesPage(driver);
+        smartphonesPage.getPocketBooks().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);

@@ -13,7 +13,7 @@ public class BrainAccessoriesPage extends BasePage {
     }
 
     public WebElement getVideoCards() {
-        return driver.findElement(By.xpath("//h2[text()='Відеокарти']"));
+        return driver.findElement(By.xpath("//div/h2[text()='Відеокарти']"));
     }
 
     public WebElement getProcessors() {

@@ -1,15 +1,18 @@
-package Tests.brain.tests.computers.televisions;
+package Tests.brain.televisions;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.*;
+import PageObject.brain.com.ua.BrainHomePage;
+import PageObject.brain.com.ua.BrainOrderPage;
+import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.BrainTelevisionsPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_13 extends TestInit {
+public class CheckHomeCinemasCategory extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkHomeCinemasCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -19,7 +22,7 @@ public class BT_13 extends TestInit {
         homePage.getTVs().click();
 
         BrainTelevisionsPage televisionsPage = new BrainTelevisionsPage(driver);
-        televisionsPage.getTelevisions().click();
+        televisionsPage.getHomeCinemas().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
@@ -28,7 +31,7 @@ public class BT_13 extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

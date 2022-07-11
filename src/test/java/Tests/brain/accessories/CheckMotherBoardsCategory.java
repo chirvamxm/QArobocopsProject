@@ -1,4 +1,4 @@
-package Tests.brain.tests.computers.accessories;
+package Tests.brain.accessories;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainAccessoriesPage;
@@ -9,10 +9,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_06 extends TestInit {
+public class CheckMotherBoardsCategory extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkMotherBoardsCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,7 +22,7 @@ public class BT_06 extends TestInit {
         homePage.getAccessories().click();
 
         BrainAccessoriesPage accessoriesPage = new BrainAccessoriesPage(driver);
-        accessoriesPage.getProcessors().click();
+        accessoriesPage.getMotherBoards().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
@@ -31,7 +31,7 @@ public class BT_06 extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.privat24().click();
+        orderPage.visaMasterCard().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

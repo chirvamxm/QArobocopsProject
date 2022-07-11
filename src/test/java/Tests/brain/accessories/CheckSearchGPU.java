@@ -1,29 +1,27 @@
-package Tests.brain.tests.computers.smartphones;
+package Tests.brain.accessories;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainHomePage;
 import PageObject.brain.com.ua.BrainOrderPage;
 import PageObject.brain.com.ua.BrainProductPage;
-import PageObject.brain.com.ua.BrainSmartphonesPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_11 extends TestInit {
+public class CheckSearchGPU extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkSearchGPU() {
 
         goToSite("https://brain.com.ua/ukr/");
+        sleep(2);
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getSmartphones().click();
-
-        BrainSmartphonesPage smartphonesPage = new BrainSmartphonesPage(driver);
-        smartphonesPage.getPocketBooks().click();
-        homePage.getFirstModel().click();
+        homePage.getSearchField().sendKeys("Відеокарта GeForce");
+        homePage.getSearchBtn().click();
+        homePage.getFirstResult().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
         sleep(5);
@@ -31,7 +29,7 @@ public class BT_11 extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

@@ -1,4 +1,4 @@
-package Tests.brain.tests.computers;
+package Tests.brain.computers;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainComputersPage;
@@ -9,10 +9,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_03 extends TestInit {
+public class CheckNotebookCategory extends TestInit {
 
     @Test
-    public void doIt () {
+    public void checkNotebookCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,11 +22,11 @@ public class BT_03 extends TestInit {
         homePage.getComputers().click();        // переходимо у розділ "Ноутбуки і комп'ютери"
 
         BrainComputersPage computersPage = new BrainComputersPage(driver);
-        computersPage.getMonitors().click();    // обираємо категорію "Монітори та аксесуари"
-        computersPage.getSubcategory().click(); // обираємо підкатегорію
+        computersPage.getNoteBook().click();    // обираємо категорію "Ноутбуки"
         homePage.getFirstModel().click();       // обираємо першу модель
 
         BrainProductPage productPage = new BrainProductPage(driver);
+        sleep(5);
         productPage.getBuyBtn().click();        // клік по кнопці "Купити"
         productPage.getCheckOut().click();      // клік по кнопці "Оформити замовлення"
 
