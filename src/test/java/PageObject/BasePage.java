@@ -31,5 +31,11 @@ public class BasePage {
     public void implicitlyWait() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
-}
 
+    public void getQuantity(int n, WebElement webElement) {
+        for (int i = 0; i < n; i++) {
+            webElement.click();
+        }
+    }
+
+}

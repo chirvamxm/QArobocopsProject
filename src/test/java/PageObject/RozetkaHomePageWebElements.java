@@ -67,11 +67,30 @@ public class RozetkaHomePageWebElements extends BasePage {
     public WebElement passwordField() {
         return getElementByXpath("//input[@id='auth_pass']"); //поле для вводу паролю
     }
+
     public WebElement addNumber() {
         return getElementByXpath("//button[@class='button button--green button--medium']");
     }
-    public WebElement getSignInBtn(){
+
+    public WebElement getSignInBtn() {
         return getElementByXpath("//*[@class='modal__heading']");
     }
 
+    public WebElement getMenuCategoryGoodsForGamers() {
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/game-zone/c80261/']");
+    }
+
+    public WebElement ukrainianLanguageBtn() {
+        return getElementByXpath("//span[@class='lang__link lang__link--active ng-star-inserted']");
+    }
+
+    public WebElement closeWindow() {
+        return getElementByXpath("//span[@class='exponea-close-cross']");
+    }
+
+
+    public WebElement getCatalog (){
+        return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
+
+    }
 }
