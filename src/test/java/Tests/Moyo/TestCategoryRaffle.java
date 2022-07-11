@@ -18,7 +18,7 @@ public class TestCategoryRaffle extends TestInit {
         goToSite("https://www.moyo.ua/");
         moyoHomePage.getSharesBtn().click();
         moyoSharesPage.getRaffleBtn().click();
-        moyoSharesPage.getRaffle4Console().click();
+        moyoSharesPage.getRaffle4ConsoleBtn().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }

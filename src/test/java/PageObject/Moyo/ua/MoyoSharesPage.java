@@ -23,7 +23,7 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//*[@for='types_2']");
     }
 
-    public WebElement getSeasonSale() {
+    public WebElement getSeasonSaleBtn() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
     }
 
@@ -32,26 +32,35 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//*[@for='types_4']");
     }
 
-    public WebElement getRaffle4Console() {
+    public WebElement getRaffle4ConsoleBtn() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/54_387x255_1657282506.jpg']");
     }
 
     //Installment section
-    public WebElement getInstallment() {
+    public WebElement getInstallmentBtn() {
         return getElementByXpath("//*[@for='types_3']");
     }
 
-    public WebElement getCreditSony0() {
+    public WebElement getCreditSony0Btn() {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/28_387x255_1655995696.jpg']");
     }
 
     //SmartPhone category
-    public WebElement getSmartPhoneAndMobilePhone() {
+    public WebElement getSmartPhoneAndMobilePhoneBtn() {
         return getElementByXpath("//*[@for='categories_2853']");
     }
 
-    public WebElement getImgTradeSmartPhone() {
+    public WebElement getImgTradeSmartPhoneBtn() {
         return getElementByXpath("//img[@alt='Смарт обмін для ваших смартфонів']");
+    }
+
+    //GameZone category
+    public WebElement getGameZoneBtn() {
+        return getElementByXpath("//*[@for='categories_2914']");
+    }
+
+    public WebElement getSale55OnTheChildrenToysBtn() {
+        return getElementByXpath("//img[@alt='Знижки до 55% на іграшки та дитячі товари']");
     }
 }
 
