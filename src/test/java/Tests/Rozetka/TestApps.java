@@ -16,8 +16,6 @@ public class TestApps extends TestInit {
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         JavascriptExecutor js= (JavascriptExecutor) driver;
 
-
-
         goToSite("https://rozetka.com.ua/ua/");
         js.executeScript("window.scrollBy(0,500)","");
         homePageWebElements.getGoogleAppBtn().click();
@@ -31,10 +29,5 @@ public class TestApps extends TestInit {
         driver.switchTo().window(tabs4.get(1));
         System.out.println(getURL());
         Assert.assertTrue(getURL().contains("apps.apple.com"));
-
-
-
-
-
     }
 }
