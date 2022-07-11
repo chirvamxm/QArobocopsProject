@@ -2,6 +2,7 @@ package Tests.Moyo;
 
 import PageObject.Moyo.ua.MoyoHomePage;
 import Tests.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestRegisteredMoyo extends TestInit {
@@ -17,5 +18,6 @@ public class TestRegisteredMoyo extends TestInit {
         moyoHomePage.getEmailSearchBtn().sendKeys("illlingleb@gmail.com \n");
         moyoHomePage.getAgreeWithRegBtn().click();
         moyoHomePage.getRegisterBtn().click();
+        Assert.assertTrue(moyoHomePage.showUserRegistered().isDisplayed());
     }
 }

@@ -14,5 +14,6 @@ public class TestLoginMoyo extends TestInit {
         moyoHomePage.getEnterBtn().click();
         moyoHomePage.getSearchPhoneOrEmailBtn().sendKeys("illlingleb@gmail.com \n");
         moyoHomePage.getDropBoxEnterBtn().click();
+        System.out.println("Проверьте почту");
     }
 }
