@@ -1,7 +1,6 @@
-package Tests.brain.tests.computers;
+package Tests.brain.computers;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainComputersPage;
 import PageObject.brain.com.ua.BrainHomePage;
 import PageObject.brain.com.ua.BrainOrderPage;
 import PageObject.brain.com.ua.BrainProductPage;
@@ -9,10 +8,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_04 extends TestInit {
+public class CheckSearchLaptop extends TestInit {
 
     @Test
-    public void doIt () {
+    public void checkSearchLaptop() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);

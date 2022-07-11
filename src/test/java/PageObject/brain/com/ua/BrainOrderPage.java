@@ -22,7 +22,7 @@ public class BrainOrderPage extends BasePage {
 
     // Method of production
     public WebElement newPost() {
-        return driver.findElement(By.xpath("//div/label[contains(text(),'У відділення Нової Пошти')]"));
+        return driver.findElement(By.xpath("//div/label[@for='br-dt2']"));
     }
 
     // Recipient data

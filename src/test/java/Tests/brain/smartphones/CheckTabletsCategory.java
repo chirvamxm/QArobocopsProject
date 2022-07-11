@@ -1,25 +1,28 @@
-package Tests.brain.tests.computers.accessories;
+package Tests.brain.smartphones;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.*;
+import PageObject.brain.com.ua.BrainHomePage;
+import PageObject.brain.com.ua.BrainOrderPage;
+import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.BrainSmartphonesPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_05 extends TestInit {
+public class CheckTabletsCategory extends TestInit {
 
     @Test
-    public void doIt() {
+    public void checkTabletsCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getAccessories().click();
+        homePage.getSmartphones().click();
 
-        BrainAccessoriesPage accessoriesPage = new BrainAccessoriesPage(driver);
-        accessoriesPage.getVideoCards().click();
+        BrainSmartphonesPage smartphonesPage = new BrainSmartphonesPage(driver);
+        smartphonesPage.getTablets().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
@@ -28,7 +31,7 @@ public class BT_05 extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

@@ -1,4 +1,4 @@
-package Tests.brain.tests.computers;
+package Tests.brain.computers;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainComputersPage;
@@ -9,10 +9,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BT_02 extends TestInit {
+public class CheckMonitorsCategory extends TestInit {
 
     @Test
-    public void doIt () {
+    public void checkMonitorsCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,20 +22,21 @@ public class BT_02 extends TestInit {
         homePage.getComputers().click();        // переходимо у розділ "Ноутбуки і комп'ютери"
 
         BrainComputersPage computersPage = new BrainComputersPage(driver);
-        computersPage.getDesktop().click();     // обираємо категорію "Настільні комп'ютери"
+        computersPage.getMonitors().click();    // обираємо категорію "Монітори та аксесуари"
+        computersPage.getSubcategory().click(); // обираємо підкатегорію
         homePage.getFirstModel().click();       // обираємо першу модель
 
         BrainProductPage productPage = new BrainProductPage(driver);
+        sleep(5);
         productPage.getBuyBtn().click();        // клік по кнопці "Купити"
         productPage.getCheckOut().click();      // клік по кнопці "Оформити замовлення"
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.privat24().click();           // вибір способу оплати
+        orderPage.visaMasterCard().click();     // вибір способу оплати
         orderPage.newPost().click();            // вибір доставки Новою Поштою
         orderPage.recipientData();              // заповнення контактних даних
         orderPage.cancelPurchase();             // відміна покупки, видалення товару
 
         Assert.assertTrue(orderPage.cartIsEmpty().isDisplayed());
     }
-
 }

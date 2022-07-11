@@ -12,7 +12,7 @@ public class BrainTelevisionsPage extends BasePage {
     }
 
     public WebElement getTelevisions() {
-        return driver.findElement(By.xpath("//h2[text()='Телевізори']"));
+        return driver.findElement(By.xpath("//div/h2[text()='Телевізори']"));
     }
 
     public WebElement getHomeCinemas() {
