@@ -12,4 +12,7 @@ public class RozetkaItemsPageWebElements extends BasePage{
     public WebElement getAddToCartBtn() {
         return getElementByXpath("//li[@class='product-buttons__item ng-star-inserted']");
     }
+    public WebElement getToMySelectedGoods (){
+        return getElementByXpath("//button[@class='buy-button buy-button_state_in-cart button button--with-icon button--green button--medium ng-star-inserted']");
+    }
 }
