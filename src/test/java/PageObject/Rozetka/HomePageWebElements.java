@@ -21,12 +21,16 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//input[@name='search']");
     }
 
-    public WebElement getCatalog() {
+    public WebElement getCatalogueBtn() {
         return getElementByXpath("//button[@class='button button--medium button--with-icon menu__toggle ng-star-inserted']");
     }
 
     public WebElement ukrainianLanguageBtn() {
         return getElementByXpath("//span[@class='lang__link lang__link--active ng-star-inserted']");
+    }
+
+    public WebElement getCartBtn() {
+        return getElementByXpath("//button[@class='header__button ng-star-inserted header__button--active']");
     }
 
     // SIGN IN WINDOW

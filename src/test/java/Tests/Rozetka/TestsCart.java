@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class TestsCart extends TestInit {
     // test for the "+" button in the cart, which when pressed, increases the quantity by 1 piece
+
     @Test
     public void moreProductInTheCart() {
 
@@ -19,7 +20,7 @@ public class TestsCart extends TestInit {
 
         goToSite("https://rozetka.com.ua/");
         homePageWebElements.closeWindow().click();
-        homePageWebElements.getCatalog().click();
+        homePageWebElements.getCatalogueBtn().click();
         homePageWebElements.getMenuCategoryGoodsForGamers().click();
         categoryGoodsForGamersElements.getGameLaptopsAsus().click();
         categoryGoodsForGamersElements.getAsusLaptop().click();
