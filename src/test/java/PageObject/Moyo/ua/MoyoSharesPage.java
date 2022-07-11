@@ -62,5 +62,32 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getSale55OnTheChildrenToysBtn() {
         return getElementByXpath("//img[@alt='Знижки до 55% на іграшки та дитячі товари']");
     }
+
+    //SmartGadget category
+    public WebElement getSmartGadgetBtn() {
+        return getElementByXpath("//*[@for='categories_2915']");
+    }
+
+    public WebElement getSmartTradeForWatchBtn() {
+        return getElementByXpath("//img[@alt='Смарт обмін для вашого смарт-годинника']");
+    }
+
+    //TVPhoneVideoAudio category
+    public WebElement getTVPhoneVideoAudioBtn() {
+        return getElementByXpath("//*[@for='categories_2981']");
+    }
+
+    public WebElement getSmartTradeTVBtn() {
+        return getElementByXpath("//img[@alt='Смарт обмін для ваших телевізорів']");
+    }
+
+    //ComputerHardware category
+    public WebElement getComputerHardwareBtn() {
+        return getElementByXpath("//*[@for='categories_3309']");
+    }
+
+    public WebElement getRestoreBuild2000() {
+        return getElementByXpath("//img[@alt='Рідні стіни, рідним людям. 2000 грн. від покупки віддаємо на відновлення будинків.']");
+    }
 }
 
