@@ -24,7 +24,7 @@ public class TestShareCategoryDiscount extends TestInit {
         sleep(1);
         moyoSharesPage.getDiscountBtn().click();
         sleep(1);
-        moyoSharesPage.getSeasonSale().click();
+        moyoSharesPage.getSeasonSaleBtn().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }

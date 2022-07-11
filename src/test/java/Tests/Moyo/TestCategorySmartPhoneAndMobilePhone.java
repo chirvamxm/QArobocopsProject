@@ -17,9 +17,9 @@ public class TestCategorySmartPhoneAndMobilePhone extends TestInit {
 
         goToSite("https://www.moyo.ua/");
         moyoHomePage.getSharesBtn().click();
-        moyoSharesPage.getSmartPhoneAndMobilePhone().click();
+        moyoSharesPage.getSmartPhoneAndMobilePhoneBtn().click();
         sleep(1); //crush site
-        moyoSharesPage.getImgTradeSmartPhone().click();
+        moyoSharesPage.getImgTradeSmartPhoneBtn().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }

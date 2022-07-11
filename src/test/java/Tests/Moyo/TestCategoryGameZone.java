@@ -7,18 +7,19 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCategoryInstallment extends TestInit {
+public class TestCategoryGameZone extends TestInit {
 
     @Test
-    public void testCategoryInstallment() {
+    public void testCategoryGameZone() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoSharesPage moyoSharesPage = new MoyoSharesPage(driver);
         MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
 
         goToSite("https://www.moyo.ua/");
+        sleep(1);
         moyoHomePage.getSharesBtn().click();
-        moyoSharesPage.getInstallmentBtn().click();
-        moyoSharesPage.getCreditSony0Btn().click();
+        moyoSharesPage.getGameZoneBtn().click();
+        moyoSharesPage.getSale55OnTheChildrenToysBtn().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }
