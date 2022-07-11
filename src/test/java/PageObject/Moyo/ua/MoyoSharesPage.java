@@ -45,5 +45,13 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/28_387x255_1655995696.jpg']");
     }
 
+    //SmartPhone category
+    public WebElement getSmartPhoneAndMobilePhone() {
+        return getElementByXpath("//*[@for='categories_2853']");
+    }
+
+    public WebElement getImgTradeSmartPhone() {
+        return getElementByXpath("//img[@alt='Смарт обмін для ваших смартфонів']");
+    }
 }
 
