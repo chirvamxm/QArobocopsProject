@@ -102,4 +102,10 @@ public class HomePageWebElements extends BasePage {
     public WebElement getAppleAppBtn() {
         return getElementByXpath("//img[@alt='AppStore']");
     }
+
+    //INFORMATION ABOUT COMPANY SECTION
+
+    public WebElement getContactsBtn() {
+        return getElementByXpath("//a[@class='ng-tns-c91-3'][@href='https://rozetka.com.ua/ua/contacts/']");
+    }
 }
