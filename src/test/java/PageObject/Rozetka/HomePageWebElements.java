@@ -13,6 +13,10 @@ public class HomePageWebElements extends BasePage {
     }
 
     //HEADER
+    public WebElement getRozetkaIconBtn() {
+        return getElementByXpath("//img[@alt='Rozetka Logo']");
+    }
+
     public WebElement getProfileBtn() {
         return getElementByXpath("//li[@class='header-actions__item header-actions__item--user']");
     }
@@ -87,6 +91,10 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement getMenuCategoryGoodsForGamers() {
         return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/game-zone/c80261/']");
+    }
+
+    public WebElement getMenuCategoryAlcoholAndProducts() {
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/ua/alkoholnie-napitki-i-produkty/c4626923/']");
     }
 
     public WebElement closeWindow() {
