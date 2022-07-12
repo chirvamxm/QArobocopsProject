@@ -1,7 +1,6 @@
 package PageObject.Moyo.ua;
 
 import PageObject.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,6 +11,6 @@ public class MoyoPageCategorySmartphones extends BasePage {
 
     //the first item from "топ товарів"
     public WebElement getTopGoodsFirst() {
-        return driver.findElements(By.xpath("//button[@class='buy-btn btn btn--green js-product-modal-close js-buy']")).get(0);
+        return getElementsByXpath("//button[@class='buy-btn btn btn--green js-product-modal-close js-buy']").get(0);
     }
 }

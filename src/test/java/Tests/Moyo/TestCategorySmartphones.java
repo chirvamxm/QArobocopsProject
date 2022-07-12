@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 public class TestCategorySmartphones extends TestInit {
+
     @Test
     public void testCategorySmartphones() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
@@ -35,6 +36,7 @@ public class TestCategorySmartphones extends TestInit {
         moyoPageOrder.getBtnNext().click();
         sleep(2);
         moyoPageOrder.getBtnMagazine().click();
+        sleep(2);
         moyoPageOrder.getBtnCity().click();
         moyoPageOrder.getFieldCity().sendKeys("Ірпінь\n");
         sleep(2);
