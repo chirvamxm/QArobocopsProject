@@ -21,6 +21,10 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//li[@class='header-actions__item header-actions__item--user']");
     }
 
+    public WebElement getComparisonBtn() {
+        return getElementByXpath("//button[@aria-label='Списки порівнянь']");
+    }
+
     public WebElement getSearchField() {
         return getElementByXpath("//input[@name='search']");
     }
