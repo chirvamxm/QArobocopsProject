@@ -31,4 +31,8 @@ public class AlcoholAndProductsPageWebElements extends BasePage {
     public WebElement getJamesonWhiskey1LBtn() {
         return getElementByXpath("//div[@data-goods-id='4719078']");
     }
+
+    public WebElement getBallantineFines1LBtn() {
+        return getElementByXpath("//div[@data-goods-id='4718007']");
+    }
 }
