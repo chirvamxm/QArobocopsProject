@@ -14,10 +14,10 @@ public class TestSectionSocialNetworks extends TestInit {
     public void testSectionSocialNetworks() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
-        JavascriptExecutor js= (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
         goToSite("https://rozetka.com.ua/ua/");
-        js.executeScript("window.scrollBy(0,500)","");
+        js.executeScript("window.scrollBy(0,500)", "");
         homePageWebElements.getFacebookBtn().click();
         sleep(2); //Waiting for opening new window
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
