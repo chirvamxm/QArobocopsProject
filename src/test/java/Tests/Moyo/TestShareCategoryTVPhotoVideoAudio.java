@@ -7,10 +7,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCategoryComputerHardware extends TestInit {
+public class TestShareCategoryTVPhotoVideoAudio extends TestInit {
 
     @Test
-    public void testCategoryComputerHardware() {
+    public void testCategoryTVPhotoVideoAudio() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoSharesPage moyoSharesPage = new MoyoSharesPage(driver);
         MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
@@ -19,9 +19,9 @@ public class TestCategoryComputerHardware extends TestInit {
         sleep(1);  //crush site
         moyoHomePage.getSharesBtn().click();
         sleep(1);  //crush site
-        moyoSharesPage.getComputerHardwareBtn().click();
-        sleep(1); //crush site
-        moyoSharesPage.getRestoreBuild2000().click();
+        moyoSharesPage.getTVPhoneVideoAudioBtn().click();
+        sleep(1);  //crush site
+        moyoSharesPage.getSmartTradeTVBtn().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }
