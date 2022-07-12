@@ -36,6 +36,10 @@ public class BrainHomePage extends BasePage {
         return driver.findElement(By.xpath("//span[contains(text(),'Мережеве обладнання')]"));
     }
 
+    public WebElement getAcoustics() {
+        return driver.findElement(By.xpath("//span[contains(text(),'акустика')]"));
+    }
+
 
     // common tools
     public WebElement getSearchField() {
