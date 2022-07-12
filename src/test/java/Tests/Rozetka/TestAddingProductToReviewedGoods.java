@@ -18,7 +18,7 @@ public class TestAddingProductToReviewedGoods extends TestInit {
         homePageWebElements.getCatalogueBtn().click();
         homePageWebElements.getMenuCategoryAlcoholAndProducts().click();
         alcoholAndProductsPageWebElements.getStrongDrinksBtn().click();
-        alcoholAndProductsPageWebElements.confirmAgeBtn().click();;
+        alcoholAndProductsPageWebElements.confirmAgeBtn().click();
         alcoholAndProductsPageWebElements.getWhiskeyBtn().click();
         alcoholAndProductsPageWebElements.getJamesonWhiskey1LBtn().click();
         sleep(1); //Waiting for loading page

@@ -10,25 +10,25 @@ public class AlcoholAndProductsPageWebElements extends BasePage {
         super(driver);
     }
 
-    public WebElement confirmAgeBtn(){
+    public WebElement confirmAgeBtn() {
         return getElementByXpath("//div[@class='rz-banner__btn rz-btn_blue btn-link']");
     }
 
     //CATEGORIES
 
-    public WebElement getStrongDrinksBtn(){
+    public WebElement getStrongDrinksBtn() {
         return getElementByXpath("//a[@href='https://rozetka.com.ua/krepkie-napitki/c4594292/'][@class='tile-cats__heading ng-star-inserted']");
     }
 
     //STRONG DRINKS CATEGORIES
 
-    public WebElement getWhiskeyBtn(){
+    public WebElement getWhiskeyBtn() {
         return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/viski/c4649130/']");
     }
 
     //WHISKEY PRODUCTS
 
-    public WebElement getJamesonWhiskey1LBtn(){
+    public WebElement getJamesonWhiskey1LBtn() {
         return getElementByXpath("//div[@data-goods-id='4719078']");
     }
 }
