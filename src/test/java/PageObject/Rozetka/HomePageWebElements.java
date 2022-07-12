@@ -108,4 +108,30 @@ public class HomePageWebElements extends BasePage {
     public WebElement getContactsBtn() {
         return getElementByXpath("//a[@class='ng-tns-c91-3'][@href='https://rozetka.com.ua/ua/contacts/']");
     }
+
+    //WE ARE IN SOCIAL NETWORK SECTION
+
+    public WebElement getFacebookBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--facebook']");
+    }
+
+    public WebElement getTwitterBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--twitter']");
+    }
+
+    public WebElement getYoutubeBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--youtube']");
+    }
+
+    public WebElement getInstagramBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--instagram']");
+    }
+
+    public WebElement getViberBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--viber']");
+    }
+
+    public WebElement getTelegramBtn() {
+        return getElementByXpath("//a[@class='socials__link socials__link--telegram']");
+    }
 }
