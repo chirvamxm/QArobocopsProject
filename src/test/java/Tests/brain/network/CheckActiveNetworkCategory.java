@@ -1,18 +1,15 @@
-package Tests.brain;
+package Tests.brain.network;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainHomePage;
-import PageObject.brain.com.ua.BrainNetworkHardwarePage;
-import PageObject.brain.com.ua.BrainOrderPage;
-import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.*;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckPassiveNetworkCategory extends TestInit {
+public class CheckActiveNetworkCategory extends TestInit {
 
     @Test
-    public void checkPassiveNetworkCategory() {
+    public void checkActiveNetworkCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,8 +19,8 @@ public class CheckPassiveNetworkCategory extends TestInit {
         homePage.getNetworkHardware().click();
 
         BrainNetworkHardwarePage networkHardwarePage = new BrainNetworkHardwarePage(driver);
-        networkHardwarePage.getPassiveNetwork().click();
-        networkHardwarePage.getSubConnectors().click();
+        networkHardwarePage.getActiveNetwork().click();
+        networkHardwarePage.getSubRouters().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
@@ -32,7 +29,7 @@ public class CheckPassiveNetworkCategory extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.privat24().click();
+        orderPage.visaMasterCard().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

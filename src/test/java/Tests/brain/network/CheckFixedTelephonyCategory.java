@@ -1,4 +1,4 @@
-package Tests.brain;
+package Tests.brain.network;
 
 import PageObject.BasePage;
 import PageObject.brain.com.ua.BrainHomePage;

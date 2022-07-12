@@ -1,35 +1,35 @@
-package Tests.brain;
+package Tests.brain.network;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.*;
+import PageObject.brain.com.ua.BrainHomePage;
+import PageObject.brain.com.ua.BrainOrderPage;
+import PageObject.brain.com.ua.BrainProductPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckActiveNetworkCategory extends TestInit {
+public class CheckSearchRouters extends TestInit {
 
     @Test
-    public void checkActiveNetworkCategory() {
+    public void checkSearchRouters() {
 
         goToSite("https://brain.com.ua/ukr/");
+        sleep(2);
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getNetworkHardware().click();
-
-        BrainNetworkHardwarePage networkHardwarePage = new BrainNetworkHardwarePage(driver);
-        networkHardwarePage.getActiveNetwork().click();
-        networkHardwarePage.getSubRouters().click();
-        homePage.getFirstModel().click();
+        homePage.getSearchField().sendKeys("Маршрутизатор TP-Link");
+        homePage.getSearchBtn().click();
+        homePage.getFirstResult().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
-        sleep(5);
         productPage.getBuyBtn().click();
+        sleep(5);
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();
