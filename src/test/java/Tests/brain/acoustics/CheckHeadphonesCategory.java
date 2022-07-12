@@ -1,18 +1,15 @@
-package Tests.brain;
+package Tests.brain.acoustics;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainAcousticsPage;
-import PageObject.brain.com.ua.BrainHomePage;
-import PageObject.brain.com.ua.BrainOrderPage;
-import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.*;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckAcousticSystemsCategory extends TestInit {
+public class CheckHeadphonesCategory extends TestInit {
 
     @Test
-    public void checkAcousticSystemsCategory() {
+    public void checkHeadphonesCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,7 +19,7 @@ public class CheckAcousticSystemsCategory extends TestInit {
         homePage.getAcoustics().click();
 
         BrainAcousticsPage acousticsPage = new BrainAcousticsPage(driver);
-        acousticsPage.getAcousticSystems().click();
+        acousticsPage.getHeadphones().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
@@ -31,7 +28,7 @@ public class CheckAcousticSystemsCategory extends TestInit {
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.privat24().click();
+        orderPage.visaMasterCard().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();

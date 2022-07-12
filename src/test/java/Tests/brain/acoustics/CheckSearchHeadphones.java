@@ -1,7 +1,6 @@
-package Tests.brain;
+package Tests.brain.acoustics;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainAcousticsPage;
 import PageObject.brain.com.ua.BrainHomePage;
 import PageObject.brain.com.ua.BrainOrderPage;
 import PageObject.brain.com.ua.BrainProductPage;
@@ -9,29 +8,28 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckMicrophonesCategory extends TestInit {
+public class CheckSearchHeadphones extends TestInit {
 
     @Test
-    public void checkMicrophonesCategory() {
+    public void checkSearchHeadphones() {
 
         goToSite("https://brain.com.ua/ukr/");
+        sleep(2);
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getAcoustics().click();
-
-        BrainAcousticsPage acousticsPage = new BrainAcousticsPage(driver);
-        acousticsPage.getMicrophones().click();
-        homePage.getFirstModel().click();
+        homePage.getSearchField().sendKeys("навушники AirPods");
+        homePage.getSearchBtn().click();
+        homePage.getFirstResult().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
-        sleep(5);
         productPage.getBuyBtn().click();
+        sleep(5);
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();
