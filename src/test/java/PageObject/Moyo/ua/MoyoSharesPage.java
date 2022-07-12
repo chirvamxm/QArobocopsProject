@@ -89,5 +89,16 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getRestoreBuild2000() {
         return getElementByXpath("//img[@alt='Рідні стіни, рідним людям. 2000 грн. від покупки віддаємо на відновлення будинків.']");
     }
+
+    //Electronics Accessories
+    public WebElement getShowAllBtn() {
+        return getElementByXpath("//div[@data-text-more='Показать все']");
+    }
+    public WebElement getAccessoriesElectronicsBtn() {
+        return getElementByXpath("//*[@for='categories_3325']");
+    }
+    public WebElement getKeySteam() {
+        return getElementByXpath("//img[@alt='Отримай ключ гаманця STEAM на 15€ при покупці обраних ігрових клавіатур MSI']");
+    }
 }
 
