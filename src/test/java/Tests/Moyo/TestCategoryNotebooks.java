@@ -2,26 +2,26 @@ package Tests.Moyo;
 
 import PageObject.Moyo.ua.MoyoHomePage;
 import PageObject.Moyo.ua.MoyoPageBasket;
-import PageObject.Moyo.ua.MoyoPageCategorySmartphones;
+import PageObject.Moyo.ua.MoyoPageCategoryNotebooks;
 import PageObject.Moyo.ua.MoyoPageOrder;
 import Tests.TestInit;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class TestCategorySmartphones extends TestInit {
+public class TestCategoryNotebooks extends TestInit {
     @Test
-    public void testCategorySmartphones() {
+    public void testCategoryNotebooks() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
-        MoyoPageCategorySmartphones moyoPageCategorySmartphones = new MoyoPageCategorySmartphones(driver);
+        MoyoPageCategoryNotebooks moyoPageCategoryNotebooks = new MoyoPageCategoryNotebooks(driver);
         MoyoPageBasket moyoPageBasket = new MoyoPageBasket(driver);
         MoyoPageOrder moyoPageOrder = new MoyoPageOrder(driver);
 
         goToSite("https://www.moyo.ua/ua/");
         sleep(2);
         moyoHomePage.getMenuBtn().click();
-        moyoHomePage.getMenuCategorySmartphones().click();
+        moyoHomePage.getMenuCategoryApple().click();
         sleep(2);
-        moyoPageCategorySmartphones.getTopGoodsFirst().sendKeys(Keys.ENTER);
+        moyoPageCategoryNotebooks.getTopGoodsFirst().sendKeys(Keys.ENTER);
         sleep(2);
         moyoPageBasket.getBuyBtn().sendKeys(Keys.ENTER);
         sleep(2);
@@ -36,7 +36,7 @@ public class TestCategorySmartphones extends TestInit {
         sleep(2);
         moyoPageOrder.getBtnMagazine().click();
         moyoPageOrder.getBtnCity().click();
-        moyoPageOrder.getFieldCity().sendKeys("Ірпінь\n");
+        moyoPageOrder.getFieldCity().sendKeys("Луцьк\n");
         sleep(2);
         moyoPageOrder.getFieldCityFirstItem().click();
         sleep(2);
