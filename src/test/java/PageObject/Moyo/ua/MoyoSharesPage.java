@@ -94,11 +94,22 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getShowAllBtn() {
         return getElementByXpath("//div[@data-text-more='Показать все']");
     }
+
     public WebElement getAccessoriesElectronicsBtn() {
         return getElementByXpath("//*[@for='categories_3325']");
     }
-    public WebElement getKeySteam() {
+
+    public WebElement getKeySteamBtn() {
         return getElementByXpath("//img[@alt='Отримай ключ гаманця STEAM на 15€ при покупці обраних ігрових клавіатур MSI']");
+    }
+
+    //Tablets and E books category
+    public WebElement getTabletsAndEBooksBtn() {
+        return getElementByXpath("//*[@for='categories_3562']");
+    }
+
+    public WebElement getSweetTVTablets() {
+        return getElementByXpath("//img[@alt='Sweet.tv у подарунок до планшетів Blackview']");
     }
 }
 
