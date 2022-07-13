@@ -1,7 +1,6 @@
 package PageObject.Moyo.ua;
 
 import PageObject.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -124,7 +123,24 @@ public class MoyoHomePage extends BasePage {
     public WebElement getSharesBtn() {
         return getElementByXpath("//li[@class='header_nav_item header_nav_item--actions ']");
     }
+
     public WebElement showUserRegistered() {
         return getElementByXpath("//div[text()='Пользователь с таким e-mail адресом уже существует']");
+    }
+
+    public WebElement getCityBtn() {
+        return getElementByXpath("//span[@data-class='cities']");
+    }
+
+    public WebElement getSelectCity(String cityName) {
+        return getElementByXpath(String.format("//div[@data-city='%s']", cityName));
+    }
+
+    public WebElement getBlueMessageBtn() {
+        return getElementByXpath("//div[@class='widget-opener__button']");
+    }
+
+    public WebElement getTelegramBtn() {
+        return getElementByXpath("//a[@href='https://t.me/MOYObot_bot']");
     }
 }
