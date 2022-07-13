@@ -34,9 +34,5 @@ public class TestAdding2ItemsFromDifferentCategoryToCompare extends TestInit {
         homePageWebElements.getComparisonBtn().click();
         Assert.assertTrue(itemsPageWebElements.getToComparisonListBtn().get(0).isDisplayed());
         Assert.assertTrue(itemsPageWebElements.getToComparisonListBtn().get(1).isDisplayed());
-
-
-
     }
-
 }
