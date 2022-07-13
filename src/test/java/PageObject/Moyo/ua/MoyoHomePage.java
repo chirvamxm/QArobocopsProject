@@ -151,4 +151,8 @@ public class MoyoHomePage extends BasePage {
     public WebElement getViberBtn() {
         return getElementByXpath("//a[@href='viber://pa?chatURI=moyoua']");
     }
+
+    public WebElement getOnlineChatBtn() {
+        return getElementByXpath("//div[@class='contact-channels__channel online-chat']");
+    }
 }
