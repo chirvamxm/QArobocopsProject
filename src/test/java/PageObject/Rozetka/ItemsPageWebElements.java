@@ -4,6 +4,8 @@ import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class ItemsPageWebElements extends BasePage {
 
     public ItemsPageWebElements(WebDriver driver) {
@@ -22,8 +24,8 @@ public class ItemsPageWebElements extends BasePage {
         return getElementByXpath("//button[@class='compare-button ng-star-inserted']");
     }
 
-    public WebElement getToComparisonListBtn() {
-        return getElementByXpath("//a[@class='comparison-modal__link']");
+    public List<WebElement> getToComparisonListBtn() {
+        return getElementsByXpath("//a[@class='comparison-modal__link']");
     }
 
     public WebElement alertMessageNotEnoughItemsToCompare() {

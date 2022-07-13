@@ -3,18 +3,20 @@ package Tests.Rozetka;
 import PageObject.Rozetka.AlcoholAndProductsPageWebElements;
 import PageObject.Rozetka.HomePageWebElements;
 import PageObject.Rozetka.ItemsPageWebElements;
+import PageObject.Rozetka.SearchPageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAdding1ItemToCompare extends TestInit {
+public class TestAdding2ItemsFromDifferentCategoryToCompare extends TestInit {
 
     @Test
-    public void testAdding1ItemToCompare() {
+    public void testAdding2ItemsFromDifferentCategoryToCompare() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
-        AlcoholAndProductsPageWebElements alcoholAndProductsPageWebElements = new AlcoholAndProductsPageWebElements(driver);
         ItemsPageWebElements itemsPageWebElements = new ItemsPageWebElements(driver);
+        AlcoholAndProductsPageWebElements alcoholAndProductsPageWebElements = new AlcoholAndProductsPageWebElements(driver);
+        SearchPageWebElements searchPageWebElements = new SearchPageWebElements(driver);
 
         goToSite("https://rozetka.com.ua/ua/");
         homePageWebElements.getCatalogueBtn().click();
@@ -25,8 +27,16 @@ public class TestAdding1ItemToCompare extends TestInit {
         alcoholAndProductsPageWebElements.getBallantineFines1LBtn().click();
         sleep(1); //Wait for site loading
         itemsPageWebElements.getAddToComparisonBtn().click();
+        homePageWebElements.getSearchField().sendKeys("роутер");
+        homePageWebElements.getSearchingBtn().click();
+        searchPageWebElements.getRouterTPLINKArcherC20().click();
+        itemsPageWebElements.getAddToComparisonBtn().click();
         homePageWebElements.getComparisonBtn().click();
-        itemsPageWebElements.getToComparisonListBtn().get(0).click();
-        Assert.assertTrue(itemsPageWebElements.alertMessageNotEnoughItemsToCompare().isDisplayed());
+        Assert.assertTrue(itemsPageWebElements.getToComparisonListBtn().get(0).isDisplayed());
+        Assert.assertTrue(itemsPageWebElements.getToComparisonListBtn().get(1).isDisplayed());
+
+
+
     }
+
 }
