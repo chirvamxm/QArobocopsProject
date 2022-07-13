@@ -143,7 +143,12 @@ public class MoyoHomePage extends BasePage {
     public WebElement getTelegramBtn() {
         return getElementByXpath("//a[@href='https://t.me/MOYObot_bot']");
     }
+
     public WebElement getMessagerBtn() {
         return getElementByXpath("//a[@href='https://m.me/282758345078294']");
+    }
+
+    public WebElement getViberBtn() {
+        return getElementByXpath("//a[@href='viber://pa?chatURI=moyoua']");
     }
 }
