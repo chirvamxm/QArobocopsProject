@@ -1,7 +1,6 @@
-package Tests.brain;
+package Tests.brain.gadgets;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainGadgetsPage;
 import PageObject.brain.com.ua.BrainHomePage;
 import PageObject.brain.com.ua.BrainOrderPage;
 import PageObject.brain.com.ua.BrainProductPage;
@@ -9,30 +8,28 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckDronesCategory extends TestInit {
+public class CheckSearchCameras extends TestInit {
 
     @Test
-    public void checkDronesCategory() {
+    public void checkSearchCameras() {
 
         goToSite("https://brain.com.ua/ukr/");
+        sleep(2);
         BasePage page = new BasePage(driver);
         page.implicitlyWait();
 
         BrainHomePage homePage = new BrainHomePage(driver);
-        homePage.getGadgets().click();
-
-        BrainGadgetsPage gadgetsPage = new BrainGadgetsPage(driver);
-        gadgetsPage.getDrones().click();
-        gadgetsPage.getSubPropellers().click();
-        homePage.getFirstModel().click();
+        homePage.getSearchField().sendKeys("фотоапарат Canon");
+        homePage.getSearchBtn().click();
+        homePage.getFirstResult().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
-        sleep(5);
         productPage.getBuyBtn().click();
+        sleep(5);
         productPage.getCheckOut().click();
 
         BrainOrderPage orderPage = new BrainOrderPage(driver);
-        orderPage.visaMasterCard().click();
+        orderPage.privat24().click();
         orderPage.newPost().click();
         orderPage.recipientData();
         orderPage.cancelPurchase();
