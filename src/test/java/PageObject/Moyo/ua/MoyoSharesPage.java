@@ -108,8 +108,17 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//*[@for='categories_3562']");
     }
 
-    public WebElement getSweetTVTablets() {
+    public WebElement getSweetTVTabletsBtn() {
         return getElementByXpath("//img[@alt='Sweet.tv у подарунок до планшетів Blackview']");
+    }
+
+    //Appliances category
+    public WebElement getAppliancesBtn() {
+        return getElementByXpath("//*[@for='categories_4439']");
+    }
+
+    public WebElement getSaleVacuumCleaner26() {
+        return getElementByXpath("//img[@alt='Знижки до 26% на пилососи Philips']");
     }
 }
 
