@@ -117,8 +117,18 @@ public class MoyoSharesPage extends BasePage {
         return getElementByXpath("//*[@for='categories_4439']");
     }
 
-    public WebElement getSaleVacuumCleaner26() {
+    public WebElement getSaleVacuumCleaner26Btn() {
         return getElementByXpath("//img[@alt='Знижки до 26% на пилососи Philips']");
+    }
+
+    //Sport Relax Tourism Category
+    public WebElement getSportRelaxTourismBtn() {
+        return getElementByXpath("//*[@for='categories_4706']");
+    }
+
+    public WebElement getBuySuitcaseGiftWengerBtn() {
+        return getElementByXpath("//img[@alt='Купуй валізу та отримай у подарунок рюкзак Wenger']");
+
     }
 }
 
