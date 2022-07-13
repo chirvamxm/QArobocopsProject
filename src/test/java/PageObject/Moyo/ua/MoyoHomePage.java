@@ -92,7 +92,7 @@ public class MoyoHomePage extends BasePage {
         return getElementByXpath("//a[@class='menu_link item-2981']");
     }
 
-    public WebElement getMenuCategoryTvAudio() {
+    public WebElement getMenuCategoryTV() {
         return getElementByXpath("//a[@class='menu_link item-7759']");
     }
 
