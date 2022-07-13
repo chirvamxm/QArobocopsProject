@@ -21,4 +21,12 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement getAddToComparisonBtn() {
         return getElementByXpath("//button[@class='compare-button ng-star-inserted']");
     }
+
+    public WebElement getToComparisonListBtn() {
+        return getElementByXpath("//a[@class='comparison-modal__link']");
+    }
+
+    public WebElement alertMessageNotEnoughItemsToCompare() {
+        return getElementByXpath("//div[text()=' Недостатньо товарів для порівняння ']");
+    }
 }
