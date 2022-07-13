@@ -28,7 +28,5 @@ public class TestAdding1ItemToCompare extends TestInit {
         homePageWebElements.getComparisonBtn().click();
         itemsPageWebElements.getToComparisonListBtn().click();
         Assert.assertTrue(itemsPageWebElements.alertMessageNotEnoughItemsToCompare().isDisplayed());
-
-
     }
 }
