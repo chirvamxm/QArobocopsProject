@@ -1,18 +1,15 @@
-package Tests.brain;
+package Tests.brain.gadgets;
 
 import PageObject.BasePage;
-import PageObject.brain.com.ua.BrainGadgetsPage;
-import PageObject.brain.com.ua.BrainHomePage;
-import PageObject.brain.com.ua.BrainOrderPage;
-import PageObject.brain.com.ua.BrainProductPage;
+import PageObject.brain.com.ua.*;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckWearableDevicesCategory extends TestInit {
+public class CheckCamerasCategory extends TestInit {
 
     @Test
-    public void checkWearableDevicesCategory() {
+    public void checkCamerasCategory() {
 
         goToSite("https://brain.com.ua/ukr/");
         BasePage page = new BasePage(driver);
@@ -22,8 +19,7 @@ public class CheckWearableDevicesCategory extends TestInit {
         homePage.getGadgets().click();
 
         BrainGadgetsPage gadgetsPage = new BrainGadgetsPage(driver);
-        gadgetsPage.getWearableDevices().click();
-        gadgetsPage.getSubFitBracelets().click();
+        gadgetsPage.getDigitalCameras().click();
         homePage.getFirstModel().click();
 
         BrainProductPage productPage = new BrainProductPage(driver);
