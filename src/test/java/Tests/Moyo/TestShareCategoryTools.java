@@ -8,10 +8,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestShareCategorySportRelaxTourism extends TestInit {
+public class TestShareCategoryTools extends TestInit {
 
     @Test
-    public void testShareCategorySportRelaxTourism() {
+    public void testShareCategoryTools() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoSharesPage moyoSharesPage = new MoyoSharesPage(driver);
         MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
@@ -22,8 +22,8 @@ public class TestShareCategorySportRelaxTourism extends TestInit {
         moyoSharesPage.getShowAllBtn().click();
         js.executeScript("window.scrollBy(0,200)", "");
         sleep(1); // slow loading site
-        moyoSharesPage.getSportRelaxTourismBtn().click();
-        moyoSharesPage.getBuySuitcaseGiftWengerBtn().click();
+        moyoSharesPage.getToolsBtn().click();
+        moyoSharesPage.getWashAll().click();
         Assert.assertTrue(moyoTimerOut.getTimerBtn().isDisplayed());
     }
 }
