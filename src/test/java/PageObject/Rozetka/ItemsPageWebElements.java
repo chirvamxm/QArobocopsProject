@@ -29,4 +29,8 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement alertMessageNotEnoughItemsToCompare() {
         return getElementByXpath("//div[text()=' Недостатньо товарів для порівняння ']");
     }
+
+    public WebElement displayed2ItemsInCompare() {
+        return getElementByXpath("//ul[@class='products-grid']");
+    }
 }
