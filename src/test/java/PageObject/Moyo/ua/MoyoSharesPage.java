@@ -138,5 +138,14 @@ public class MoyoSharesPage extends BasePage {
     public WebElement getWashAll() {
         return getElementByXpath("//*[@alt='Відмиється все']");
     }
+
+    //Children World category
+    public WebElement getChildrenWorldBtn() {
+        return getElementByXpath("//*[@for='categories_5513']");
+    }
+
+    public WebElement getBuyNeonFortniteLootBtn() {
+        return getElementByXpath("//img[@alt='Купуй біговел NEON і отримай в подарунок Fortnite Loot Chest, скриню аксесуарів']");
+    }
 }
 
