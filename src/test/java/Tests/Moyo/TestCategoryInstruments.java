@@ -5,21 +5,21 @@ import Tests.TestInit;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class TestCategoryHomeGoods extends TestInit {
+public class TestCategoryInstruments extends TestInit {
 
     @Test
-    public void testCategoryHomeGoods() {
+    public void testCategoryInstruments() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
-        MoyoPageCategoryHomeGoods moyoPageCategoryHomeGoods = new MoyoPageCategoryHomeGoods(driver);
+        MoyoPageCategoryInstruments moyoPageCategoryInstruments = new MoyoPageCategoryInstruments(driver);
         MoyoPageBasket moyoPageBasket = new MoyoPageBasket(driver);
         MoyoPageOrder moyoPageOrder = new MoyoPageOrder(driver);
 
         goToSite("https://www.moyo.ua/ua/");
         sleep(2);
         moyoHomePage.getMenuBtn().click();
-        moyoHomePage.getMenuCategoryHomeGoods().click();
+        moyoHomePage.getMenuCategoryInstruments().click();
         sleep(2);
-        moyoPageCategoryHomeGoods.getTopGoodsFirst().sendKeys(Keys.ENTER);
+        moyoPageCategoryInstruments.getTopGoodsFirst().sendKeys(Keys.ENTER);
         sleep(2);
         moyoPageBasket.getBuyBtn().sendKeys(Keys.ENTER);
         sleep(2);
@@ -35,7 +35,7 @@ public class TestCategoryHomeGoods extends TestInit {
         moyoPageOrder.getBtnMagazine().click();
         sleep(2);
         moyoPageOrder.getBtnCity().click();
-        moyoPageOrder.getFieldCity().sendKeys("Лубни\n");
+        moyoPageOrder.getFieldCity().sendKeys("Дніпро\n");
         sleep(2);
         moyoPageOrder.getFieldCityFirstItem().click();
         sleep(2);
