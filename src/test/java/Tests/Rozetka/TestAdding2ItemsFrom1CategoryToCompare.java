@@ -32,7 +32,7 @@ public class TestAdding2ItemsFrom1CategoryToCompare extends TestInit {
         sleep(1); //Wait for site loading
         itemsPageWebElements.getAddToComparisonBtn().click();
         homePageWebElements.getComparisonBtn().click();
-        itemsPageWebElements.getToComparisonListBtn().click();
+        itemsPageWebElements.getToComparisonListBtn().get(0).click();
         Assert.assertTrue(itemsPageWebElements.displayed2ItemsInCompare().isDisplayed());
     }
 }
