@@ -128,7 +128,15 @@ public class MoyoSharesPage extends BasePage {
 
     public WebElement getBuySuitcaseGiftWengerBtn() {
         return getElementByXpath("//img[@alt='Купуй валізу та отримай у подарунок рюкзак Wenger']");
+    }
 
+    //Tools category
+    public WebElement getToolsBtn() {
+        return getElementByXpath("//*[@for='categories_4910']");
+    }
+
+    public WebElement getWashAll() {
+        return getElementByXpath("//*[@alt='Відмиється все']");
     }
 }
 
