@@ -25,6 +25,10 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//input[@name='search']");
     }
 
+    public WebElement getFindBtnInUA (){
+        return getElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted'][contains(text(), ' Знайти')]");
+    }
+
     public WebElement getSearchingBtn() {
         return getElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted']");
     }

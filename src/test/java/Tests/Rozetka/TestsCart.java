@@ -5,6 +5,7 @@ import PageObject.Rozetka.CategoryGoodsForGamersElements;
 import PageObject.Rozetka.HomePageWebElements;
 import PageObject.Rozetka.ItemsPageWebElements;
 import Tests.TestInit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestsCart extends TestInit {
@@ -26,8 +27,8 @@ public class TestsCart extends TestInit {
         categoryGoodsForGamersElements.getAsusLaptop().click();
         itemsPageWebElements.getAddToCartBtn().click();
         itemsPageWebElements.getToMySelectedGoods().click();
-        //rozetkaHomePageWebElements.getQuantity(5, rozetkaCartElement.getProductQuantityPlus());
-        //Assert.assertTrue(rozetkaCartElement.theNumberOfUnitsAudit(6).isDisplayed());
+        getQuantity(5, cartWebElements.getProductQuantityPlus());
+        Assert.assertTrue(cartWebElements.theNumberOfUnitsAudit(6).isDisplayed());
     }
 }
 

@@ -14,6 +14,6 @@ public class ItemsPageWebElements extends BasePage {
         return getElementByXpath("//li[@class='product-buttons__item ng-star-inserted']");
     }
     public WebElement getToMySelectedGoods (){
-        return getElementByXpath("//button[@class='buy-button buy-button_state_in-cart button button--with-icon button--green button--medium ng-star-inserted']");
+        return getElementByXpath("//span[@class='buy-button__label ng-star-inserted'] [contains(text(), ' В корзине ')]");
     }
 }
