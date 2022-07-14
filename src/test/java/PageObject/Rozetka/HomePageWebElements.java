@@ -125,6 +125,14 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//a[@class='ng-tns-c91-3'][@href='https://rozetka.com.ua/ua/contacts/']");
     }
 
+    public WebElement getAboutUsBtn() {
+        return getElementByXpath("//a[@class='ng-tns-c91-5'][@href='https://rozetka.com.ua/ua/pages/about/']");
+    }
+
+    public WebElement getTermsBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/legal_terms/']");
+    }
+
     //WE ARE IN SOCIAL NETWORK SECTION
 
     public WebElement getFacebookBtn() {
