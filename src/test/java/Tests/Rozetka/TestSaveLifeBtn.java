@@ -19,6 +19,5 @@ public class TestSaveLifeBtn extends TestInit {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
         Assert.assertTrue(getURL().contains("savelife"));
-
     }
 }
