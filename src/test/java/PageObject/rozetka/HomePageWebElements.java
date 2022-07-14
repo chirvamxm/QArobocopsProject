@@ -46,6 +46,9 @@ public class HomePageWebElements extends BasePage {
     public WebElement getCartBtn() {
         return getElementByXpath("//button[@class='header__button ng-star-inserted header__button--active']");
     }
+    public WebElement findInUkraine(){
+        return getElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted'][contains(text(),' Знайти')]");
+    }
 
     // SIGN IN WINDOW
     public WebElement getSignUpBtn() {
@@ -96,11 +99,11 @@ public class HomePageWebElements extends BasePage {
     //CATALOGUE SECTION
 
     public WebElement getMenuCategoryGoodsForGamers() {
-        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/game-zone/c80261/']");
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/ua/game-zone/c80261/']");
     }
 
     public WebElement getMenuCategoryAlcoholAndProducts() {
-        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/ua/alkoholnie-napitki-i-produkty/c4626923/']");
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'][@href='https://rozetka.com.ua/ua/computers-notebooks/c80253/']");
     }
 
     public WebElement closeWindow() {
