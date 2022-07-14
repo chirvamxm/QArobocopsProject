@@ -28,6 +28,5 @@ public class TestInformationAboutCompanySection extends TestInit {
         homePageWebElements.getTermsBtn().click();
         Assert.assertTrue(getURL().contains("terms"));
         driver.navigate().back();
-
     }
 }
