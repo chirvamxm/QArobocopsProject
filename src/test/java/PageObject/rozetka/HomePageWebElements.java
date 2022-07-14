@@ -230,7 +230,7 @@ public class HomePageWebElements extends BasePage {
     }
 
     public WebElement getVisaBtn() {
-        return getElementByXpath("Visa Verified");
+        return getElementByXpath("//img[@alt='Visa Verified']");
     }
 
     public WebElement getVisaWindow() {
