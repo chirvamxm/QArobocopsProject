@@ -178,4 +178,26 @@ public class HomePageWebElements extends BasePage {
     public WebElement getServiceCenterBtn() {
         return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/service-centers/']");
     }
+
+    //SERVICES SECTION
+
+    public WebElement getLoyaltyBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/loyalty/']");
+    }
+
+    public WebElement getRozetkaPremiumBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/premium/']");
+    }
+
+    public WebElement getCertificatesBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/certificates/']");
+    }
+
+    public WebElement getRozetkaChangeBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/obmin/']");
+    }
+
+    public WebElement getTravelBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.travel/ua/']");
+    }
 }
