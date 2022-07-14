@@ -218,4 +218,22 @@ public class HomePageWebElements extends BasePage {
     public WebElement getStoreSearchBtn() {
         return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/news-articles-promotions/promotions/store_search/']");
     }
+
+    //LICENSE SECTION
+
+    public WebElement getMasterCardBtn() {
+        return getElementByXpath("//img[@alt='MasterCard Secure']");
+    }
+
+    public WebElement getMasterCardWindow() {
+        return getElementByXpath("//h3[@class='modal__heading']");
+    }
+
+    public WebElement getVisaBtn() {
+        return getElementByXpath("Visa Verified");
+    }
+
+    public WebElement getVisaWindow() {
+        return getElementByXpath("//h3[@class='modal__heading']");
+    }
 }
