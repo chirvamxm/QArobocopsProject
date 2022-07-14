@@ -1,16 +1,16 @@
-package Tests.Rozetka;
+package Tests.rozetka;
 
-import PageObject.Rozetka.AlcoholAndProductsPageWebElements;
-import PageObject.Rozetka.HomePageWebElements;
-import PageObject.Rozetka.ItemsPageWebElements;
+import PageObject.rozetka.AlcoholAndProductsPageWebElements;
+import PageObject.rozetka.HomePageWebElements;
+import PageObject.rozetka.ItemsPageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestAdding1ItemToCompare extends TestInit {
+public class TestAddingProductToComparison extends TestInit {
 
     @Test
-    public void testAdding1ItemToCompare() {
+    public void testAddingProductToComparison() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         AlcoholAndProductsPageWebElements alcoholAndProductsPageWebElements = new AlcoholAndProductsPageWebElements(driver);
@@ -23,10 +23,7 @@ public class TestAdding1ItemToCompare extends TestInit {
         alcoholAndProductsPageWebElements.confirmAgeBtn().click();
         alcoholAndProductsPageWebElements.getWhiskeyBtn().click();
         alcoholAndProductsPageWebElements.getBallantineFines1LBtn().click();
-        sleep(1); //Wait for site loading
         itemsPageWebElements.getAddToComparisonBtn().click();
-        homePageWebElements.getComparisonBtn().click();
-        itemsPageWebElements.getToComparisonListBtn().get(0).click();
-        Assert.assertTrue(itemsPageWebElements.alertMessageNotEnoughItemsToCompare().isDisplayed());
+        Assert.assertTrue(homePageWebElements.getComparisonBtn().isDisplayed());
     }
 }

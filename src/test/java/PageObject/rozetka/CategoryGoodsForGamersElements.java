@@ -1,4 +1,4 @@
-package PageObject.Rozetka;
+package PageObject.rozetka;
 
 import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;

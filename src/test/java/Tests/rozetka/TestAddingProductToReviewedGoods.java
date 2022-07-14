@@ -1,7 +1,7 @@
-package Tests.Rozetka;
+package Tests.rozetka;
 
-import PageObject.Rozetka.AlcoholAndProductsPageWebElements;
-import PageObject.Rozetka.HomePageWebElements;
+import PageObject.rozetka.AlcoholAndProductsPageWebElements;
+import PageObject.rozetka.HomePageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;

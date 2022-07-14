@@ -1,9 +1,9 @@
-package Tests.Rozetka;
+package Tests.rozetka;
 
-import PageObject.Rozetka.CartWebElements;
-import PageObject.Rozetka.CategoryGoodsForGamersElements;
-import PageObject.Rozetka.HomePageWebElements;
-import PageObject.Rozetka.ItemsPageWebElements;
+import PageObject.rozetka.CartWebElements;
+import PageObject.rozetka.CategoryGoodsForGamersElements;
+import PageObject.rozetka.HomePageWebElements;
+import PageObject.rozetka.ItemsPageWebElements;
 import Tests.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
