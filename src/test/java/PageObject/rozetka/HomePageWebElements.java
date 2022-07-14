@@ -200,4 +200,22 @@ public class HomePageWebElements extends BasePage {
     public WebElement getTravelBtn() {
         return getElementByXpath("//a[@href='https://rozetka.travel/ua/']");
     }
+
+    //FOR PARTNERS SECTION
+
+    public WebElement getSellingOnRozetkaBtn() {
+        return getElementByXpath("//a[@href='https://seller.rozetka.com.ua/newseller/']");
+    }
+
+    public WebElement getPartnershipBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/partnership/']");
+    }
+
+    public WebElement getFranchiseBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/franchise/']");
+    }
+
+    public WebElement getStoreSearchBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/news-articles-promotions/promotions/store_search/']");
+    }
 }
