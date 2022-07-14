@@ -1,6 +1,6 @@
-package Tests.Rozetka;
+package Tests.rozetka;
 
-import PageObject.Rozetka.HomePageWebElements;
+import PageObject.rozetka.HomePageWebElements;
 import Tests.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;

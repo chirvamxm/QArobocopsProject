@@ -1,10 +1,8 @@
-package PageObject.Rozetka;
+package PageObject.rozetka;
 
 import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class HomePageWebElements extends BasePage {
 
@@ -157,5 +155,27 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement getTelegramBtn() {
         return getElementByXpath("//a[@class='socials__link socials__link--telegram']");
+    }
+
+    //HELP SECTION
+
+    public WebElement getDeliveryAndPaymentBtn() {
+        return getElementByXpath("//a[@href='https://help.rozetka.com.ua/p/97-dostavka/']");
+    }
+
+    public WebElement getCreditBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/pages/credit/']");
+    }
+
+    public WebElement getGuarantyBtn() {
+        return getElementByXpath("//a[@href='https://help.rozetka.com.ua/p/111-harantiya-i-povernennya-tovaru/']");
+    }
+
+    public WebElement getReturnGoodsBtn() {
+        return getElementByXpath("//a[@href='https://help.rozetka.com.ua/p/102-povernennya-tovaru/']");
+    }
+
+    public WebElement getServiceCenterBtn() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/service-centers/']");
     }
 }

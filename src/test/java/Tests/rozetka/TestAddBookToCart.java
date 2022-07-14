@@ -1,8 +1,8 @@
-package Tests.Rozetka;
+package Tests.rozetka;
 
-import PageObject.Rozetka.BooksPageWebElements;
-import PageObject.Rozetka.HomePageWebElements;
-import PageObject.Rozetka.ItemsPageWebElements;
+import PageObject.rozetka.BooksPageWebElements;
+import PageObject.rozetka.HomePageWebElements;
+import PageObject.rozetka.ItemsPageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
