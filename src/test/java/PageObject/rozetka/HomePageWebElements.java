@@ -46,8 +46,13 @@ public class HomePageWebElements extends BasePage {
     public WebElement getCartBtn() {
         return getElementByXpath("//button[@class='header__button ng-star-inserted header__button--active']");
     }
+
     public WebElement findInUkraine(){
         return getElementByXpath("//button[@class='button button_color_green button_size_medium search-form__submit ng-star-inserted'][contains(text(),' Знайти')]");
+    }
+
+    public WebElement getHomeBtn(){
+        return getElementByCssSelector("icon-home");
     }
 
     // SIGN IN WINDOW
@@ -103,7 +108,7 @@ public class HomePageWebElements extends BasePage {
     }
 
     public WebElement getMenuCategoryAlcoholAndProducts() {
-        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'][@href='https://rozetka.com.ua/ua/computers-notebooks/c80253/']");
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link menu-categories__link_state_hovered'] [@href='https://rozetka.com.ua/ua/alkoholnie-napitki-i-produkty/c4626923/']");
     }
 
     public WebElement closeWindow() {

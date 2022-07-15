@@ -28,9 +28,7 @@ public class TestsCart extends TestInit {
         itemsPageWebElements.getAddToCartBtn().click();
         homePageWebElements.getCartBtn();
         getQuantity(4, cartWebElements.getProductQuantityPlus());
+        Assert.assertTrue(cartWebElements.theNumberOfUnitsAudit(4).isDisplayed());
     }
-
-
 }
-
 

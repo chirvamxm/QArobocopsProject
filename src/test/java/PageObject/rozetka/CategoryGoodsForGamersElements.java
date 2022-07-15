@@ -37,4 +37,8 @@ public class CategoryGoodsForGamersElements extends BasePage {
     public WebElement getAsusLaptop() {
         return getElementByXpath("//span[@class='goods-tile__title']");
     }
+
+    public WebElement getGamingMiceLogitech() {
+        return getElementByXpath("//a[@class='popular-category'] [@href='https://rozetka.com.ua/igrovie-mishi/c4673278/producer=logitech/']");
+    }
 }
