@@ -1,5 +1,6 @@
 package Tests.Moyo;
 
+import PageObject.Moyo.ua.MoyoGoodsBtns;
 import PageObject.Moyo.ua.MoyoHomePage;
 import PageObject.Moyo.ua.MoyoPageCategorySmartphones;
 import Tests.TestInit;
@@ -11,6 +12,7 @@ public class TestGoodsVeiwList extends TestInit {
     public void testGoodsVeiwList() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoPageCategorySmartphones moyoPageCategorySmartphones = new MoyoPageCategorySmartphones(driver);
+        MoyoGoodsBtns moyoGoodsBtns = new MoyoGoodsBtns(driver);
 
         goToSite("https://www.moyo.ua/ua/");
         sleep(2);
@@ -19,8 +21,8 @@ public class TestGoodsVeiwList extends TestInit {
         sleep(2);
         moyoPageCategorySmartphones.getSubMenuFirst().click();
         sleep(2);
-        moyoPageCategorySmartphones.getViewListBtn().click();
+        moyoGoodsBtns.getViewListBtn().click();
         sleep(2);
-        moyoPageCategorySmartphones.getReturnHomePageBtn().click();
+        moyoGoodsBtns.getReturnHomePageBtn().click();
     }
 }

@@ -14,15 +14,11 @@ public class MoyoPageCategorySmartphones extends BasePage {
         return getElementsByXpath("//button[@class='buy-btn btn btn--green js-product-modal-close js-buy']").get(0);
     }
 
+    public WebElement getOpenGoodsFirst() {
+        return getElementsByXpath("//img[@class='first-image lazy-loaded']").get(0);
+    }
+
     public WebElement getSubMenuFirst() {
         return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(0);
-    }
-
-    public WebElement getViewListBtn() {
-        return getElementByXpath("//div[@data-layout='list']");
-    }
-
-    public WebElement getReturnHomePageBtn() {
-        return getElementByXpath("//div[@class='header_logo hash_links']");
     }
 }
