@@ -17,7 +17,6 @@ public class TestShareCategoryAppliances extends TestInit {
         MoyoTimerOut moyoTimerOut = new MoyoTimerOut(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-
         goToSite("https://www.moyo.ua/");
         moyoHomePage.getSharesBtn().click();
         moyoSharesPage.getShowAllBtn().click();

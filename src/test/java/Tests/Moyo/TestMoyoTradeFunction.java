@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestMoyoTradeFunction extends TestInit {
+
     @Test
     public void testMoyoTradeFunction() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);

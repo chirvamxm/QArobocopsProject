@@ -15,9 +15,9 @@ public class TestMessageTelegram extends TestInit {
     @DataProvider
     public static Object[][] City_setup() {
         return new Object[][]{
-                {"Днепр"},
-                {"Луцк"},
-                {"Одесса"}};
+                {"Дніпро"},
+                {"Луцьк"},
+                {"Одеса"}};
     }
 
     @Test(dataProvider = "City_setup")

@@ -10,6 +10,6 @@ public class Alphax46SmartWatchpage extends BasePage {
     }
 
     public WebElement getCompareBtn() {
-        return getElementByXpath("//div[@data-in-compare-list-text='В сравнении']");
+        return getElementByXpath("//div[@class='product_add-to-compare js-compare']");
     }
 }

@@ -15,7 +15,7 @@ public class MoyoSharesPage extends BasePage {
     }
 
     public WebElement getPromoStikerSweetTVBtn() {
-        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/77_387x255_1653320721.jpg']");
+        return getElementByXpath("//img[@alt='Промоналіпка SWEET.TV безкоштовно 3 місяці Кіно']");
     }
 
     // discount section
@@ -24,7 +24,7 @@ public class MoyoSharesPage extends BasePage {
     }
 
     public WebElement getSeasonSaleBtn() {
-        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1752/81_387x255_1653987137.jpg']");
+        return getElementByXpath("/html/body/div[2]/main/div/div[1]/div/div[2]/div[1]/a[4]");
     }
 
     // raffle section
@@ -33,7 +33,7 @@ public class MoyoSharesPage extends BasePage {
     }
 
     public WebElement getRaffle4ConsoleBtn() {
-        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/54_387x255_1657282506.jpg']");
+        return getElementByXpath("//img[@alt='Розігруємо 4 ігрові консолі Nintendo']");
     }
 
     //Installment section
@@ -42,7 +42,7 @@ public class MoyoSharesPage extends BasePage {
     }
 
     public WebElement getCreditSony0Btn() {
-        return getElementByXpath("//img[@src='//img.moyo.ua/img/actions/1753/28_387x255_1655995696.jpg']");
+        return getElementByXpath("//img[@alt='Кредит 0% до 12 місяців на фото та відеотехніку Sony']");
     }
 
     //SmartPhone category
@@ -87,12 +87,12 @@ public class MoyoSharesPage extends BasePage {
     }
 
     public WebElement getRestoreBuild2000() {
-        return getElementByXpath("//img[@alt='Рідні стіни, рідним людям. 2000 грн. від покупки віддаємо на відновлення будинків.']");
+        return getElementByXpath("/html/body/div[2]/main/div/div[1]/div/div[2]/div[1]/a[4]");
     }
 
     //Electronics Accessories
     public WebElement getShowAllBtn() {
-        return getElementByXpath("//div[@data-text-more='Показать все']");
+        return getElementByXpath("//div[@data-text-more='Показати всі']");
     }
 
     public WebElement getAccessoriesElectronicsBtn() {
