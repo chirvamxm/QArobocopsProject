@@ -29,7 +29,7 @@ public class TestCartCompares extends TestInit {
         sleep(1); //crush site
         alphax46SmartWatchpage.getCompareBtn().click();
         sleep(1); //crush site
-        moyoHomePage.getComparesBtn().get(0).click();
+        moyoHomePage.getComparesBtn().click();
         sleep(1); //crush site
         Assert.assertTrue(getURL().contains("category=6713&id=503596_503610"));
     }

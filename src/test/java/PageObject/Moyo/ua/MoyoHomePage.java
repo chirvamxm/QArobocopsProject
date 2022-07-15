@@ -4,8 +4,6 @@ import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
 public class MoyoHomePage extends BasePage {
 
     public MoyoHomePage(WebDriver driver) {
@@ -45,7 +43,7 @@ public class MoyoHomePage extends BasePage {
     }
 
     public WebElement getSearchPhoneOrEmailBtn() {
-        return getElementByXpath("//input[@placeholder='Телефон или email']");
+        return getElementByXpath("//input[@id='js-auth-input-field']");
     }
 
     public WebElement getDropBoxEnterBtn() {
@@ -56,8 +54,8 @@ public class MoyoHomePage extends BasePage {
         return getElementByXpath("//input[@id='search-input']");
     }
 
-    public List<WebElement> getComparesBtn() {
-        return getElementsByXpath("//div[@data-async='L3Byb2R1Y3RzL2NvbXBhcmUv']");
+    public WebElement getComparesBtn() {
+        return getElementByXpath("//div[@class='header_actions_item header_actions_compare js-compare-list-btn']");
     }
 
     public WebElement getPlayVideoBtn() {
@@ -121,11 +119,11 @@ public class MoyoHomePage extends BasePage {
     }
 
     public WebElement getSharesBtn() {
-        return getElementByXpath("//li[@class='header_nav_item header_nav_item--actions ']");
+        return getElementByXpath("//li[@class='header_nav_item header_nav_item--actions']");
     }
 
     public WebElement showUserRegistered() {
-        return getElementByXpath("//div[text()='Пользователь с таким e-mail адресом уже существует']");
+        return getElementByXpath("//div[@data-input='email']//div[@class='input_error-text']");
     }
 
     public WebElement getCityBtn() {

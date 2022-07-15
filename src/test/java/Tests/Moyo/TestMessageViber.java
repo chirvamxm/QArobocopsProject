@@ -2,7 +2,6 @@ package Tests.Moyo;
 
 import PageObject.Moyo.ua.MoyoHomePage;
 import Tests.TestInit;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,7 @@ public class TestMessageViber extends TestInit {
     @DataProvider
     public static Object[][] City_setup() {
         return new Object[][]{
-                {"Бровары"},
+                {"Бровари"},
                 {"Житомир"},
                 {"Херсон"}};
     }

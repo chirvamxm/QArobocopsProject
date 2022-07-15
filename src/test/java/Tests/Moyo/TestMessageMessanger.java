@@ -13,9 +13,9 @@ public class TestMessageMessanger extends TestInit {
     @DataProvider
     public static Object[][] City_setup() {
         return new Object[][]{
-                {"Львов"},
-                {"Харьков"},
-                {"Ровно"}};
+                {"Львів"},
+                {"Харків"},
+                {"Рівне"}};
     }
 
     @Test(dataProvider = "City_setup")
