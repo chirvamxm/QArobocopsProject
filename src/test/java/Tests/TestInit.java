@@ -54,9 +54,8 @@ public class TestInit {
     }
 
     public void getQuantity(int n, WebElement webElement) {
-        for (int i = 0; i < n; i++) {
-            webElement.click();
-        }
+        for (int i = 0; i < n; i++);
+        webElement.click();
     }
 }
 

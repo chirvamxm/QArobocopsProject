@@ -10,7 +10,7 @@ public class CartWebElements extends BasePage {
     }
 
     public WebElement getProductQuantityPlus() {
-        return getElementByXpath("//button[@class='button button_color_white button_size_medium cart-counter__button'] [@data-testid='cart-counter-increment-button']");
+        return getElementByXpath("//button[@data-testid='cart-counter-increment-button']");
     }
 
     public WebElement getCloseCartBtn() {
