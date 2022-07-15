@@ -155,4 +155,12 @@ public class MoyoHomePage extends BasePage {
     public WebElement getOnlineChatBtn() {
         return getElementByXpath("//div[@class='contact-channels__channel online-chat']");
     }
+
+    public WebElement getCloseAdvertisingBtn() {
+        return getElementByXpath("//span[@data-id='393']");
+    }
+
+    public WebElement getSocialNetworkBtn(String socialNetwork) {
+        return getElementByXpath(String.format("//div[@class='footer_social_list']//a[contains(@href,'%s')]", socialNetwork));
+    }
 }
