@@ -39,6 +39,5 @@ public class TestAddGoodsResponse extends TestInit {
         moyoGoodsBtns.getScrollTopBtn().click();
         sleep(2);
         moyoGoodsBtns.getReturnHomePageBtn().click();
-        sleep(7);
     }
 }
