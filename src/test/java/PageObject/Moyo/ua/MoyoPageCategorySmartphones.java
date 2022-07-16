@@ -33,4 +33,8 @@ public class MoyoPageCategorySmartphones extends BasePage {
     public WebElement getSortNew() {
         return getElementByXpath("//div[@data-sort='novinka-desc']");
     }
+
+    public WebElement getSortPopular() {
+        return getElementByXpath("//div[@data-sort='weeklyrate-desc']");
+    }
 }
