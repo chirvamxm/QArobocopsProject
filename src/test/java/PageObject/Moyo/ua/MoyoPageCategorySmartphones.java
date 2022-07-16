@@ -29,4 +29,8 @@ public class MoyoPageCategorySmartphones extends BasePage {
     public WebElement getSortExpensive() {
         return getElementByXpath("//div[@data-sort='price-desc']");
     }
+
+    public WebElement getSortNew() {
+        return getElementByXpath("//div[@data-sort='novinka-desc']");
+    }
 }
