@@ -37,4 +37,32 @@ public class MoyoPageCategorySmartphones extends BasePage {
     public WebElement getSortPopular() {
         return getElementByXpath("//div[@data-sort='weeklyrate-desc']");
     }
+
+    public WebElement getSubSmartphones() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(0);
+    }
+
+    public WebElement getSubMobilePhones() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(1);
+    }
+
+    public WebElement getSubModems() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(2);
+    }
+
+    public WebElement getSubModemsLandlinePhones() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(3);
+    }
+
+    public WebElement getSubSimCards() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(4);
+    }
+
+    public WebElement getSubVouchers() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(5);
+    }
+
+    public WebElement getSubMiniATS() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(6);
+    }
 }
