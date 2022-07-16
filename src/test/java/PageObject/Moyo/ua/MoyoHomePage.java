@@ -62,6 +62,10 @@ public class MoyoHomePage extends BasePage {
         return getElementByXpath("//div[@class='video-reviews_item slick-slide slick-current slick-active']");
     }
 
+    public WebElement getLogoBtn() {
+        return getElementByXpath("//div[@class='header_logo hash_links']");
+    }
+
     public WebElement getMenuBtn() {
         return getElementByXpath("//div[@class='header_catalog_btn js-menu-btn']");
     }
