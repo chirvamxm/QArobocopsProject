@@ -6,10 +6,10 @@ import PageObject.Moyo.ua.MoyoPageCategorySmartphones;
 import Tests.TestInit;
 import org.testng.annotations.Test;
 
-public class TestGoodsSortCheap extends TestInit {
+public class TestGoodsSortExpensive extends TestInit {
 
     @Test
-    public void testGoodsSortCheap() {
+    public void testGoodsSortExpensive() {
         MoyoHomePage moyoHomePage = new MoyoHomePage(driver);
         MoyoPageCategorySmartphones moyoPageCategorySmartphones = new MoyoPageCategorySmartphones(driver);
         MoyoGoodsBtns moyoGoodsBtns = new MoyoGoodsBtns(driver);
@@ -20,7 +20,7 @@ public class TestGoodsSortCheap extends TestInit {
         moyoHomePage.getMenuCategorySmartphones().click();
         sleep(2);
         moyoPageCategorySmartphones.getSubMenuFirst().click();
-        moyoPageCategorySmartphones.getSortCheap().click();
+        moyoPageCategorySmartphones.getSortExpensive().click();
         sleep(2);
         moyoGoodsBtns.getReturnHomePageBtn().click();
     }
