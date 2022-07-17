@@ -31,7 +31,5 @@ public class TestWeightFilters extends TestInit {
         String weightText = itemsPageWebElements.itemsWeightcharacteristic().getText();
         int weightValue = Integer.parseInt(weightText);
         Assert.assertTrue(weightValue >= 60);
-
-
     }
 }
