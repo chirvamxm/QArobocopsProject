@@ -46,7 +46,7 @@ public class ItemsPageWebElements extends BasePage {
     }
 
     public WebElement productReviewsTab() {
-       return getElementByXpath("//a[@class='tabs__link'] [@href='https://rozetka.com.ua/ua/street_scooter_s2_10400_gray/p303475548/comments/']");
+        return getElementByXpath("//a[@class='tabs__link'] [@href='https://rozetka.com.ua/ua/street_scooter_s2_10400_gray/p303475548/comments/']");
     }
 
     public WebElement assertProductReviews() {
@@ -76,7 +76,8 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement assertProductVideo() {
         return getElementByXpath("//source[@type='video/mp4']");
     }
-public WebElement buyTogether() {
+
+    public WebElement buyTogether() {
         return getElementByXpath("//h4[@class='product-tabs__heading']");
-}
+    }
 }

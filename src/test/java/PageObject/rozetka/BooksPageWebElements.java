@@ -23,7 +23,4 @@ public class BooksPageWebElements extends BasePage {
     public List<WebElement> getBigAtlasOfTheWorldBtn() {
         return getElementsByXpath("//a[@title='Великий ілюстрований атлас Світу (9789669362568)']");
     }
-
-
-
 }
