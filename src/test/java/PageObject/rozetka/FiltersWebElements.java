@@ -41,4 +41,10 @@ public class FiltersWebElements extends BasePage {
     public WebElement getWeightUnder60kgBtn() {
         return getElementByXpath("//a[@data-id='Понад 60']");
     }
+
+    //WEIGHT FILTERS
+
+    public WebElement getToshibaBtn() {
+        return getElementByXpath("//a[@data-id='Toshiba']");
+    }
 }

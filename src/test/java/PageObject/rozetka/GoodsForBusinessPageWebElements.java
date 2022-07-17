@@ -20,6 +20,10 @@ public class GoodsForBusinessPageWebElements extends BasePage {
         return getElementByXpath("//a[@title='https://bt.rozetka.com.ua/metallicheskie-shkafy/c163983/']");
     }
 
+    public WebElement getLabelsPrintersBtn() {
+        return getElementByXpath("//a[@title='https://rozetka.com.ua/printery-etiketok/c4625268/']");
+    }
+
     //SAFES SECTION
 
     public WebElement getBuiltInSafesBtn() {
