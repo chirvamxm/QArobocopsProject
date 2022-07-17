@@ -12,6 +12,8 @@ public class FiltersWebElements extends BasePage {
         super(driver);
     }
 
+    //PRICE FILTERS
+
     public WebElement getMinPriceField() {
         return getElementByXpath("//input[@formcontrolname='min']");
     }
@@ -26,5 +28,11 @@ public class FiltersWebElements extends BasePage {
 
     public List<WebElement> getPriceList() {
         return getElementsByXpath("//span[@class='goods-tile__price-value']");
+    }
+
+    //LOCK FILTERS
+
+    public WebElement getElectronicCodeBtn() {
+        return getElementByXpath("//a[@data-id='Електронний кодовий']");
     }
 }

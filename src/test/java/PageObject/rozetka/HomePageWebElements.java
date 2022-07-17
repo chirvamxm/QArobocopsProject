@@ -119,6 +119,10 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/ua/alkoholnie-napitki-i-produkty/c4626923/']");
     }
 
+    public WebElement getMenuCategoryGoodsForBusiness() {
+        return getElementByXpath("//a[@href='https://rozetka.com.ua/ua/tovary-dlya-biznesa/c4627851/'][@class='menu-categories__link js-menu-categories__link']");
+    }
+
     public WebElement closeWindow() {
         return getElementByXpath("//span[@class='exponea-close-cross']");
     }
