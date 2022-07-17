@@ -81,6 +81,10 @@ public class ItemsPageWebElements extends BasePage {
         return getElementByXpath("//h4[@class='product-tabs__heading']");
     }
 
+    public WebElement productTitle() {
+        return getElementByXpath("//h1[@class='product__title']");
+    }
+
     //BUILT-IN SAFES ITEMS
 
     public WebElement getBuiltInSafeGriffonWL5028E() {
@@ -103,5 +107,11 @@ public class ItemsPageWebElements extends BasePage {
 
     public WebElement itemsWeightcharacteristic() {
         return getElementByXpath("//a[@href='/ua/shkafy-arhivnye/c288990/ves-kg-209395=2557567/']");
+    }
+
+    //LABELS PRINTERS ITEMS
+
+    public WebElement getTermoPrinterToshibaBEX4T1GS12() {
+        return getElementByXpath("//div[@data-goods-id='339465373']");
     }
 }
