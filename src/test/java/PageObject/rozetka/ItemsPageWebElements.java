@@ -80,4 +80,16 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement buyTogether() {
         return getElementByXpath("//h4[@class='product-tabs__heading']");
     }
+
+    //BUILT-IN SAFES ITEMS
+
+    public WebElement getBuiltInSafeGriffonWL5028E() {
+        return getElementByXpath("//div[@data-goods-id='111415658']");
+    }
+
+    //LOCK CHARACTERISTIC VALUE
+
+    public WebElement electronicCodeLockType() {
+        return getElementByXpath("//a[@href='/ua/vstraivaemie-seyfi/c4656126/56107=148142/']");
+    }
 }
