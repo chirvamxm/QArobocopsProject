@@ -42,9 +42,15 @@ public class FiltersWebElements extends BasePage {
         return getElementByXpath("//a[@data-id='Понад 60']");
     }
 
-    //WEIGHT FILTERS
+    //BRANDS FILTERS
 
     public WebElement getToshibaBtn() {
         return getElementByXpath("//a[@data-id='Toshiba']");
+    }
+
+    //WATER HEATING FILTERS
+
+    public WebElement getWaterHeatingBtn() {
+        return getElementByXpath("//a[@data-id='Підігрів води']");
     }
 }

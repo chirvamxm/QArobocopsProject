@@ -105,7 +105,7 @@ public class ItemsPageWebElements extends BasePage {
 
     //WEIGHT CHARACTERISTIC VALUE
 
-    public WebElement itemsWeightcharacteristic() {
+    public WebElement itemsWeightCharacteristic() {
         return getElementByXpath("//a[@href='/ua/shkafy-arhivnye/c288990/ves-kg-209395=2557567/']");
     }
 
@@ -113,5 +113,15 @@ public class ItemsPageWebElements extends BasePage {
 
     public WebElement getTermoPrinterToshibaBEX4T1GS12() {
         return getElementByXpath("//div[@data-goods-id='339465373']");
+    }
+
+    //HIGH PRESSURE CLEANERS ITEMS
+
+    public WebElement getHighPressureCleanerForAutoCBK() {
+        return getElementByXpath("//div[@data-goods-id='344618833']");
+    }
+
+    public WebElement waterHeatingCharacteristic() {
+        return getElementByXpath("//a[@href='/ua/cleaners/c155534/23995=1/']");
     }
 }
