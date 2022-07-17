@@ -29,7 +29,5 @@ public class TestWaterHeatingFilter extends TestInit {
         itemsPageWebElements.getHighPressureCleanerForAutoCBK().click();
         itemsPageWebElements.characteristicsTab().click();
         Assert.assertTrue(itemsPageWebElements.waterHeatingCharacteristic().getText().contains("Так"));
-
-
     }
 }
