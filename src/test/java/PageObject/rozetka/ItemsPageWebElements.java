@@ -124,4 +124,18 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement waterHeatingCharacteristic() {
         return getElementByXpath("//a[@href='/ua/cleaners/c155534/23995=1/']");
     }
+
+    //BOXES ITEMS
+
+    public WebElement box21l60x40x15М10ЕКОILPE() {
+        return getElementByXpath("//div[@data-goods-id='270012006']");
+    }
+
+    public WebElement materialCharacteristic() {
+        return getElementByXpath("//a[@href='/ua/yashchiki/c4641728/material148176=plastik/']");
+    }
+
+    public WebElement heightCharacteristic() {
+        return getElementByXpath("//a[@href='/ua/yashchiki/c4641728/visota172230=150-mm/']");
+    }
 }
