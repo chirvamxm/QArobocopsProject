@@ -25,9 +25,12 @@ public class CartWebElements extends BasePage {
         return getElementByXpath("//button[@class='button button--medium button--with-icon button--link context-menu-actions__button']");
     }
 
+    public WebElement confirmDeletion() {
+        return getElementByXpath("confirm deletion");
+    }
 
     public WebElement emptyCart() {
-        return getElementByXpath("//*[text()='Корзина пуста']");
+        return getElementByXpath("//*[contains(text(), 'Корзина пуста')]");
     }
 
     // is the quantity of one product
