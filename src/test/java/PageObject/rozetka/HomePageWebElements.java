@@ -11,6 +11,9 @@ public class HomePageWebElements extends BasePage {
     }
 
     //HEADER
+
+    public WebElement getMenuBtn() {return getElementByCssSelector(".ng-tns-c94-1");}
+
     public WebElement getRozetkaIconBtn() {
         return getElementByXpath("//img[@alt='Rozetka Logo']");
     }
