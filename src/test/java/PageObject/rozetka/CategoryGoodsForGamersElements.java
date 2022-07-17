@@ -23,7 +23,7 @@ public class CategoryGoodsForGamersElements extends BasePage {
     // GAMING PERIPHERAL CATEGORY
 
     public WebElement getManipulatorAndJoystickBtn() {
-        return getElementByXpath("//img[@alt='Манипуляторы, джойстики']");
+        return getElementByXpath("//img[@alt='Маніпулятори, джойстики']");
     }
 
     //MANIPULATOR AND JOYSTICK ITEMS
