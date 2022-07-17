@@ -28,6 +28,10 @@ public class GoodsForBusinessPageWebElements extends BasePage {
         return getElementByXpath("//a[@title='https://rozetka.com.ua/cleaners/c155534/']");
     }
 
+    public WebElement getBoxesBtn() {
+        return getElementByXpath("//a[@title='https://rozetka.com.ua/ua/yashchiki/c4641728/']");
+    }
+
     //SAFES SECTION
 
     public WebElement getBuiltInSafesBtn() {

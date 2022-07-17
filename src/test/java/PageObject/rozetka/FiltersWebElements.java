@@ -53,4 +53,18 @@ public class FiltersWebElements extends BasePage {
     public WebElement getWaterHeatingBtn() {
         return getElementByXpath("//a[@data-id='Підігрів води']");
     }
+
+//MATERIALS FILTERS
+
+    public WebElement getPlasticsBtn() {
+        return getElementByXpath("//a[@data-id='Пластик']");
+    }
+
+    //MATERIALS FILTERS
+
+    public WebElement getHeight150mmBtn() {
+        return getElementByXpath("//a[@data-id='150 мм']");
+    }
 }
+
+
