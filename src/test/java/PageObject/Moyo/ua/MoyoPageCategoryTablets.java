@@ -13,4 +13,12 @@ public class MoyoPageCategoryTablets extends BasePage {
     public WebElement getTopGoodsFirst() {
         return getElementsByXpath("//button[@class='buy-btn btn btn--green js-product-modal-close js-buy']").get(0);
     }
+
+    public WebElement getSubTablets() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(0);
+    }
+
+    public WebElement getSubEBooks() {
+        return getElementsByXpath("//div[@class='portal-category-list__item portal-category-list__item-hover']").get(1);
+    }
 }
