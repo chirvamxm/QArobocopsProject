@@ -35,4 +35,10 @@ public class FiltersWebElements extends BasePage {
     public WebElement getElectronicCodeBtn() {
         return getElementByXpath("//a[@data-id='Електронний кодовий']");
     }
+
+    //WEIGHT FILTERS
+
+    public WebElement getWeightUnder60kgBtn() {
+        return getElementByXpath("//a[@data-id='Понад 60']");
+    }
 }

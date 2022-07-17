@@ -92,4 +92,16 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement electronicCodeLockType() {
         return getElementByXpath("//a[@href='/ua/vstraivaemie-seyfi/c4656126/56107=148142/']");
     }
+
+    //METAL CABINETS ITEMS
+
+    public WebElement getCabinetsForArchivesUHLMASH10() {
+        return getElementByXpath("//div[@data-goods-id='3296050']");
+    }
+
+    //WEIGHT CHARACTERISTIC VALUE
+
+    public WebElement itemsWeightcharacteristic() {
+        return getElementByXpath("//a[@href='/ua/shkafy-arhivnye/c288990/ves-kg-209395=2557567/']");
+    }
 }
