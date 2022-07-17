@@ -81,6 +81,14 @@ public class ItemsPageWebElements extends BasePage {
         return getElementByXpath("//h4[@class='product-tabs__heading']");
     }
 
+    public WebElement getPrivatBank() {
+        return getElementByXpath("//button[@class='product-pictogram__button ng-star-inserted']");
+    }
+
+    public WebElement getPrivatBankToIssue() {
+        return getElementByXpath("//button[@class='button button--green button--medium credit-modal__buy']");
+    }
+
     public WebElement productTitle() {
         return getElementByXpath("//h1[@class='product__title']");
     }

@@ -1,6 +1,5 @@
 package Tests.rozetka;
 
-import PageObject.rozetka.BooksPageWebElements;
 import PageObject.rozetka.HomePageWebElements;
 import PageObject.rozetka.ItemsPageWebElements;
 import PageObject.rozetka.SportAndHobbiesElements;
@@ -8,9 +7,11 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestProductCharacteristics extends TestInit {
+public class TestPaymentInInstallmentsPrivat24 extends TestInit {
+
     @Test
-    public void productCharacteristics() {
+    public void paymentInInstallmentsPrivat() {
+
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         SportAndHobbiesElements sportAndHobbiesElements = new SportAndHobbiesElements(driver);
         ItemsPageWebElements itemsPageWebElements = new ItemsPageWebElements(driver);
@@ -20,11 +21,11 @@ public class TestProductCharacteristics extends TestInit {
         homePageWebElements.getCatalogueBtn().click();
         homePageWebElements.getMenuCategorySportsAndHobbies().click();
         sportAndHobbiesElements.getSportAndHobbies().click();
-        sleep(2);
+        sleep(4);
         sportAndHobbiesElements.getAnyScooter().click();
-        sleep(2);
-        itemsPageWebElements.characteristicsTab().click();
-        sleep(2);
-        Assert.assertTrue(itemsPageWebElements.assertCharacteristics().isDisplayed());
+        sleep(5);
+        itemsPageWebElements.getPrivatBank().click();
+        sleep(5);
+        Assert.assertTrue(itemsPageWebElements.getPrivatBankToIssue().isDisplayed());
     }
 }
