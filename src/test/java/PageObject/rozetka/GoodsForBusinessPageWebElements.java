@@ -24,6 +24,10 @@ public class GoodsForBusinessPageWebElements extends BasePage {
         return getElementByXpath("//a[@title='https://rozetka.com.ua/printery-etiketok/c4625268/']");
     }
 
+    public WebElement getHighPressureWashersBtn() {
+        return getElementByXpath("//a[@title='https://rozetka.com.ua/cleaners/c155534/']");
+    }
+
     //SAFES SECTION
 
     public WebElement getBuiltInSafesBtn() {
