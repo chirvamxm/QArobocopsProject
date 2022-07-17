@@ -103,8 +103,16 @@ public class HomePageWebElements extends BasePage {
 
     //CATALOGUE SECTION
 
+    public WebElement getMenuCategorySportsAndHobbies() {
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'][@href='https://rozetka.com.ua/ua/sport-i-uvlecheniya/c4627893/']");
+    }
+
     public WebElement getMenuCategoryGoodsForGamers() {
         return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://rozetka.com.ua/ua/game-zone/c80261/']");
+    }
+
+    public WebElement getMenuCategoryHouseholdAppliances() {
+        return getElementByXpath("//a[@class='menu-categories__link js-menu-categories__link'] [@href='https://bt.rozetka.com.ua/ua/']");
     }
 
     public WebElement getMenuCategoryAlcoholAndProducts() {

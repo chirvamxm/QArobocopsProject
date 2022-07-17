@@ -35,4 +35,48 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement displayed2ItemsInCompare() {
         return getElementByXpath("//ul[@class='products-grid']");
     }
+
+    // Product information tabs
+    public WebElement characteristicsTab() {
+        return getElementByXpath("//a[@class='tabs__link'] [contains(text(), ' Характеристики ')]");
+    }
+
+    public WebElement assertCharacteristics() {
+        return getElementByCssSelector("characteristics tab");
+    }
+
+    public WebElement productReviewsTab() {
+       return getElementByXpath("//a[@class='tabs__link'] [@href='https://rozetka.com.ua/ua/street_scooter_s2_10400_gray/p303475548/comments/']");
+    }
+
+    public WebElement assertProductReviews() {
+        return getElementByXpath("//button[@class='button button--medium button--gray']");
+    }
+
+    public WebElement productPhotoTab() {
+        return getElementByXpath("//a[@class='tabs__link'] [@href='https://rozetka.com.ua/ua/street_scooter_s2_10400_gray/p303475548/photo/']");
+    }
+
+    public WebElement assertProductPhoto() {
+        return getElementByXpath("//li[@class='product-photos__item ng-star-inserted']");
+    }
+
+    public WebElement productAskQuestion() {
+        return getElementByXpath("//a[@class='tabs__link tabs__link--active'] [@href='https://rozetka.com.ua/ua/schott_zwiesel_118538/p13028855/questions/']");
+    }
+
+    public WebElement assertProductAskQuestion() {
+        return getElementByXpath("//a[@class='tabs__link tabs__link--active'] [@href='https://rozetka.com.ua/ua/schott_zwiesel_118538/p13028855/questions/']");
+    }
+
+    public WebElement productVideoTab() {
+        return getElementByXpath("//a[@class='tabs__link tabs__link--active']");
+    }
+
+    public WebElement assertProductVideo() {
+        return getElementByXpath("//source[@type='video/mp4']");
+    }
+public WebElement buyTogether() {
+        return getElementByXpath("//h4[@class='product-tabs__heading']");
+}
 }
