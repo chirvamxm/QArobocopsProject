@@ -19,8 +19,10 @@ public class TestProductPhoto extends TestInit {
         homePageWebElements.getCatalogueBtn().click();
         homePageWebElements.getMenuCategoryGoodsForGamers().click();
         categoryGoodsForGamersElements.getGameLaptopsAsus().click();
+        sleep(3);
         categoryGoodsForGamersElements.getAsusLaptop().click();
         itemsPageWebElements.productPhotoTab().click();
+        sleep(3);
         Assert.assertTrue(itemsPageWebElements.assertProductPhoto().isDisplayed());
     }
 }
