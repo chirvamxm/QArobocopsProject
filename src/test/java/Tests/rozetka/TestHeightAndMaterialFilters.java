@@ -5,11 +5,10 @@ import PageObject.rozetka.GoodsForBusinessPageWebElements;
 import PageObject.rozetka.HomePageWebElements;
 import PageObject.rozetka.ItemsPageWebElements;
 import Tests.TestInit;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestHieghtAndMaterialFilters extends TestInit {
+public class TestHeightAndMaterialFilters extends TestInit {
 
     @Test
     public void testHeightAndMaterialFilters() {
@@ -25,7 +24,7 @@ public class TestHieghtAndMaterialFilters extends TestInit {
         goodsForBusinessPageWebElements.getBoxesBtn().click();
         filtersWebElements.getPlasticsBtn().click();
         filtersWebElements.getHeight150mmBtn().click();
-        itemsPageWebElements.box21l60x40x15М10ЕКОILPE().click();
+        itemsPageWebElements.box21l60x40x15М10().click();
         itemsPageWebElements.characteristicsTab().click();
         Assert.assertTrue(itemsPageWebElements.materialCharacteristic().getText().contains("Пластик"));
         Assert.assertTrue(itemsPageWebElements.heightCharacteristic().getText().contains("150 мм"));
