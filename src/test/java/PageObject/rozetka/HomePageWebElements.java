@@ -284,4 +284,12 @@ public class HomePageWebElements extends BasePage {
     public WebElement moreProductsToChooseFrom() {
         return getElementByXpath("//h2[contains(text(), ' Більше товарів для вибору ')]");
     }
+
+    public WebElement allSharesBtn() {
+        return getElementByXpath("//li[@class='main-slider__pagination-item']");
+    }
+
+    public WebElement closeBannerBtn() {
+        return getElementByXpath("//span[@class='exponea-close-cross']");
+    }
 }
