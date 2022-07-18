@@ -261,4 +261,26 @@ public class HomePageWebElements extends BasePage {
     public WebElement getVisaWindow() {
         return getElementByXpath("//h3[@class='modal__heading']");
     }
+
+    // product information on the main page
+
+    public WebElement recentlyViewedItems() {
+        return getElementByXpath("//h2[contains(text(), 'Останні переглянуті товари')]");
+    }
+
+    public WebElement recommendationsBasedOnYourViews() {
+        return getElementByXpath("//h2[contains(text(), ' Рекомендації на основі ваших переглядів ')]");
+    }
+
+    public WebElement advertising() {
+        return getElementByXpath("//h2[contains(text(), ' Pеклама ')]");
+    }
+
+    public WebElement promotionalOffers() {
+        return getElementByXpath("//h2[contains(text(), ' Акційні пропозиції ')]");
+    }
+
+    public WebElement moreProductsToChooseFrom() {
+        return getElementByXpath("//h2[contains(text(), ' Більше товарів для вибору ')]");
+    }
 }
