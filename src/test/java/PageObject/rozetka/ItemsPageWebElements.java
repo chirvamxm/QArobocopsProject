@@ -46,7 +46,11 @@ public class ItemsPageWebElements extends BasePage {
     }
 
     public WebElement productReviewsTab() {
-        return getElementByXpath("//a[@class='tabs__link'] [@href='https://rozetka.com.ua/ua/street_scooter_s2_10400_gray/p303475548/comments/']");
+        return getElementByXpath("//a[@class='tabs__link tabs__link--active'] [@href='https://rozetka.com.ua/ua/asus-90nb0vd1-m01110/p344277454/comments/']");
+    }
+
+    public WebElement benefits() {
+        return getElementByXpath("//input[@id='dostoinstva']");
     }
 
     public WebElement assertProductReviews() {
