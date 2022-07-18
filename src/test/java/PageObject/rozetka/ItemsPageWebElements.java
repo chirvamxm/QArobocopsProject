@@ -175,4 +175,8 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement shopsOnTheMap() {
         return getElementByXpath("//a[@role='button']");
     }
+
+    public WebElement sellerRosetka() {
+        return getElementByXpath("//strong[@class='ng-star-inserted']");
+    }
 }
