@@ -148,7 +148,7 @@ public class ItemsPageWebElements extends BasePage {
 
     //BOXES ITEMS
 
-    public WebElement box21l60x40x15М10ЕКОILPE() {
+    public WebElement box21l60x40x15М10() {
         return getElementByXpath("//div[@data-goods-id='270012006']");
     }
 
