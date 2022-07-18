@@ -30,7 +30,7 @@ public class TestInit {
         }
     }
 
-   // @AfterMethod
+    @AfterMethod
     public void finishSession() {
           driver.quit();
     }
