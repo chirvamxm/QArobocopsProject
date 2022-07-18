@@ -171,4 +171,8 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement moreCharacteristics() {
         return getElementByXpath("//span[@class='product-tabs__heading_color_gray'] [contains(text(), 'Термопринтер B-EX4T1-GS12 18221168768 TOSHIBA ')]");
     }
+
+    public WebElement shopsOnTheMap() {
+        return getElementByXpath("//a[@role='button']");
+    }
 }
