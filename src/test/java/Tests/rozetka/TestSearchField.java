@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class TestSearchField extends TestInit {
 
     @Test
-    public void testSearchField(){
+    public void testSearchField() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
 

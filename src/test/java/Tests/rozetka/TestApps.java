@@ -14,10 +14,10 @@ public class TestApps extends TestInit {
     public void testApps() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
-        JavascriptExecutor js= (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
         goToSite("https://rozetka.com.ua/ua/");
-        js.executeScript("window.scrollBy(0,500)","");
+        js.executeScript("window.scrollBy(0,500)", "");
         homePageWebElements.getGoogleAppBtn().click();
         ArrayList<String> tabs2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));

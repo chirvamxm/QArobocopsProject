@@ -34,10 +34,5 @@ public class TestHelpSection extends TestInit {
         js.executeScript("window.scrollBy(0,1000)", "");
         homePageWebElements.getServiceCenterBtn().click();
         Assert.assertTrue(getURL().contains("service-centers"));
-
-
-
-
-
     }
 }
