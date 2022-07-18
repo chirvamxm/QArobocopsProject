@@ -66,5 +66,3 @@ public class FiltersWebElements extends BasePage {
         return getElementByXpath("//a[@data-id='150 мм']");
     }
 }
-
-
