@@ -6,10 +6,10 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestFilterPromotionalProducts extends TestInit {
+public class TestMorePromotionalProducts extends TestInit {
 
     @Test
-    public void filterPromotionalProducts() {
+    public void morePromotionalProducts() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         PromotionalProductsPageElements promotionalProductsPageElements = new PromotionalProductsPageElements(driver);
@@ -23,6 +23,10 @@ public class TestFilterPromotionalProducts extends TestInit {
         promotionalProductsPageElements.filterWithDiscounts().click();
         sleep(2);
         promotionalProductsPageElements.filterHouseHoldGoods().click();
+        promotionalProductsPageElements.moreGoodsBtn().click();
+        sleep(2);
+        promotionalProductsPageElements.moreGoodsBtn().click();
+        sleep(2);
         Assert.assertTrue(promotionalProductsPageElements.promotionalProducts().isDisplayed());
     }
 }
