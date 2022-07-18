@@ -17,7 +17,7 @@ public class AlcoholAndProductsPageWebElements extends BasePage {
     //CATEGORIES
 
     public WebElement getStrongDrinksBtn() {
-        return getElementByXpath("//a[@href='https://rozetka.com.ua/krepkie-napitki/c4594292/'][@class='tile-cats__heading ng-star-inserted']");
+        return getElementByXpath("//a[@title='Міцні напої']");
     }
 
     //STRONG DRINKS CATEGORIES
@@ -32,7 +32,7 @@ public class AlcoholAndProductsPageWebElements extends BasePage {
         return getElementByXpath("//div[@data-goods-id='4719078']");
     }
 
-    public WebElement getBallantineFines1LBtn() {
-        return getElementByXpath("//div[@data-goods-id='4718007']");
+    public WebElement getChivasRegalMizurana07LBtn() {
+        return getElementByXpath("//div[@data-goods-id='345543760']");
     }
 }

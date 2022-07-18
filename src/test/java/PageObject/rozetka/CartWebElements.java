@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class CartWebElements extends BasePage {
+
     public CartWebElements(WebDriver driver) {
         super(driver);
     }
@@ -27,7 +28,7 @@ public class CartWebElements extends BasePage {
 
 
     public WebElement emptyCart() {
-        return getElementByXpath("//*[text()='Корзина пуста']");
+        return getElementByXpath("//*[text()='Кошик порожній']");
     }
 
     // is the quantity of one product

@@ -21,7 +21,7 @@ public class TestAdding2ItemsFrom1CategoryToCompare extends TestInit {
         alcoholAndProductsPageWebElements.getStrongDrinksBtn().click();
         alcoholAndProductsPageWebElements.confirmAgeBtn().click();
         alcoholAndProductsPageWebElements.getWhiskeyBtn().click();
-        alcoholAndProductsPageWebElements.getBallantineFines1LBtn().click();
+        alcoholAndProductsPageWebElements.getChivasRegalMizurana07LBtn().click();
         sleep(1); //Wait for site loading
         itemsPageWebElements.getAddToComparisonBtn().click();
         homePageWebElements.getCatalogueBtn().click();

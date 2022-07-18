@@ -91,7 +91,7 @@ public class ItemsPageWebElements extends BasePage {
 
     // the inscription "in stock" when choosing a product
     public WebElement IsAvailable() {
-return getElementByXpath("//p[@class='status-label status-label--green ng-star-inserted']");
+        return getElementByXpath("//p[@class='status-label status-label--green ng-star-inserted']");
     }
 
     public WebElement getBuyToCreditBtn() {
