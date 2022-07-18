@@ -261,7 +261,7 @@ public class HomePageWebElements extends BasePage {
     public WebElement getVisaWindow() {
         return getElementByXpath("//h3[@class='modal__heading']");
     }
-<<<<<<< HEAD
+    // HEAD
 
     // product information on the main page
 
@@ -284,6 +284,4 @@ public class HomePageWebElements extends BasePage {
     public WebElement moreProductsToChooseFrom() {
         return getElementByXpath("//h2[contains(text(), ' Більше товарів для вибору ')]");
     }
-=======
->>>>>>> master
 }

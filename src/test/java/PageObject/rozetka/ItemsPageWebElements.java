@@ -159,4 +159,12 @@ public class ItemsPageWebElements extends BasePage {
     public WebElement heightCharacteristic() {
         return getElementByXpath("//a[@href='/ua/yashchiki/c4641728/visota172230=150-mm/']");
     }
+
+    public WebElement moreDetailsBtn() {
+        return getElementByXpath("//button[@class='product-about__description-anchor button--link ng-star-inserted']");
+    }
+
+    public WebElement moreCharacteristics() {
+        return getElementByXpath("//span[@class='product-tabs__heading_color_gray'] [contains(text(), 'Термопринтер B-EX4T1-GS12 18221168768 TOSHIBA ')]");
+    }
 }
