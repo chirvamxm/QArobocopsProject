@@ -6,10 +6,10 @@ import PageObject.rozetka.SportAndHobbiesElements;
 import Tests.TestInit;
 import org.testng.annotations.Test;
 
-public class Test—heckTheSeller extends TestInit {
+public class TestCheckTheSeller extends TestInit {
 
     @Test
-    public void ÒheckTheSeller() {
+    public void checkTheSeller() {
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         SportAndHobbiesElements sportAndHobbiesElements = new SportAndHobbiesElements(driver);
         ItemsPageWebElements itemsPageWebElements = new ItemsPageWebElements(driver);
