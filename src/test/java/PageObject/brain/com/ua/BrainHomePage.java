@@ -4,6 +4,7 @@ import PageObject.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class BrainHomePage extends BasePage {
 
@@ -14,6 +15,9 @@ public class BrainHomePage extends BasePage {
     private static final String CITY_BUTTON = "//div[@class='br-chc']/button";
     private static final String CITY_SELECT = "//a[@data-cityid='%s']";
     private static final String HOUSEHOLD_APP = "//span[contains(text(),'Побутова техніка')]";
+    private static final String GAMING = "//span[contains(text(),'Геймінг')]";
+    private static final String ALL_CATEGORIES = "//a/span[text()='Всі категорії']";
+
 
     // catalog
     public WebElement getComputers() {
@@ -52,6 +56,15 @@ public class BrainHomePage extends BasePage {
         return driver.findElement(By.xpath(HOUSEHOLD_APP));
     }
 
+    public WebElement getGaming() {
+        return driver.findElement(By.xpath(GAMING));
+    }
+
+    public void allCategories() {
+        WebElement element = driver.findElement(By.xpath(ALL_CATEGORIES));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+    }
 
     // common tools
     public WebElement getSearchField() {
