@@ -32,7 +32,7 @@ public class TestInit {
 
     @AfterMethod
     public void finishSession() {
-      //    driver.quit();
+          driver.quit();
     }
 
     public void sleep(int seconds) {
