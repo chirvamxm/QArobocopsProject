@@ -2,7 +2,6 @@ package Tests.glovo;
 
 import PageObject.glovo.HomePageWebElements;
 import Tests.TestInit;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +9,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 public class TestSocialNetworksSection extends TestInit {
-
 
     @DataProvider
     public static Object[][] networkSelect() {
@@ -20,7 +18,6 @@ public class TestSocialNetworksSection extends TestInit {
                 {"https://twitter.com/Glovo_ES", "twitter"},
                 {"https://www.instagram.com/glovo_es/", "instagram"}};
     }
-
 
     @Test(dataProvider = "networkSelect")
     public void socialNetworkSection(String currentNetwork, String assertURL) {
