@@ -20,6 +20,14 @@ public class HomePageWebElements extends BasePage {
     public static final String LOG_IN_WITH_EMAIL_BTN = "//button[@id='login-button']";
     // ADDRESS DELIVERY WINDOW
     public static final String USE_CURRENT_LOCATION_BTN = "//div[@data-test-id='use-current-location'][@class='current-location']";
+    //RESTAURANTS CATEGORY
+    public static final String PRESTO_PIZZA_RESTAURANT_BTN = "//a[@href='/ua/uk/lutsk/presto-pizza-lut/']";
+    //PRESTO PIZZA RESTAURANT PAGE
+    public static final String PRESTO_PIZZA_BTN = "//img[@src='https://res.cloudinary.com/glovoapp/f_auto,q_auto/Products/nbutdki8xnx2vufxszsi']";
+    public static final String EL_POLO_PIZZA_BTN = "//img[@src='https://res.cloudinary.com/glovoapp/f_auto,q_auto/Products/r6ixea8wnjnnbr5tag07']";
+    public static final String SALAMI_PIZZA_BTN = "//img[@src='https://res.cloudinary.com/glovoapp/f_auto,q_auto/Products/o9kivvd5bixhzkwhgfkf']";
+    public static final String ADD_TO_CART_BTN = "//button[@data-test-id='add-button']";
+    public static final String FREE_DELIVERY_MESSAGE_BTN = "//span[@data-test-id='surcharge-button']";
     //FOOTER
     public static final String SOCIAL_NETWORK_BTN = "//a[@href='%s']";
 
@@ -49,6 +57,30 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement getUseCurrentLocationBtn() {
         return getElementByXpath(USE_CURRENT_LOCATION_BTN);
+    }
+
+    public WebElement getPrestoPizzaBtn() {
+        return getElementByXpath(PRESTO_PIZZA_BTN);
+    }
+
+    public WebElement getElPoloPizzaBtn() {
+        return getElementByXpath(EL_POLO_PIZZA_BTN);
+    }
+
+    public WebElement getSalamiPizzaBtn() {
+        return getElementByXpath(SALAMI_PIZZA_BTN);
+    }
+
+    public WebElement getAddToCartBtn() {
+        return getElementByXpath(ADD_TO_CART_BTN);
+    }
+
+    public WebElement freeDeliveryMessage() {
+        return getElementByXpath(FREE_DELIVERY_MESSAGE_BTN);
+    }
+
+    public WebElement getPrestoPizzaRestaurantBtn() {
+        return getElementByXpath(PRESTO_PIZZA_RESTAURANT_BTN);
     }
 
     public WebElement getSocialNetworkBtn(String currentNetwork) {
