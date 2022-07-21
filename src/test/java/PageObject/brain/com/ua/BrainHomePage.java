@@ -16,6 +16,7 @@ public class BrainHomePage extends BasePage {
     private static final String CITY_SELECT = "//a[@data-cityid='%s']";
     private static final String HOUSEHOLD_APP = "//span[contains(text(),'Побутова техніка')]";
     private static final String GAMING = "//span[contains(text(),'Геймінг')]";
+    private static final String SPORTS = "//span[contains(text(),'Спорт')]";
     private static final String ALL_CATEGORIES = "//a/span[text()='Всі категорії']";
     private static final String FB_ICON = "//a[@class='br-pt-facebook']";
 
@@ -59,6 +60,10 @@ public class BrainHomePage extends BasePage {
 
     public WebElement getGaming() {
         return driver.findElement(By.xpath(GAMING));
+    }
+
+    public WebElement getSport() {
+        return driver.findElement(By.xpath(SPORTS));
     }
 
     public void allCategories() {
