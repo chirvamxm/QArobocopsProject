@@ -28,14 +28,14 @@ public class TestAddPizzaInCart extends TestInit {
         dominosHomePage.getSelectCityBtn(CityName).click();
         sleep(3); //doesn't have time to see the element
         dominosHomePage.singIn();
-        sleep(3);
+        sleep(3); //doesn't have time to see the element
         js.executeScript("window.scrollBy(0,300)", "");
-        dominosHomePage.getAddCartPizzaBtn().get(0).click();
-        sleep(3);
+        dominosHomePage.getAddCartProductBtn().get(0).click();
+        sleep(3); //doesn't have time to see the element
         dominosHomePage.getAddCartBtn().click();
-        sleep(3);
+        sleep(3); //doesn't have time to see the element
         cartHomePage.getDeleteProductBtn().click();
-        sleep(3);
+        sleep(3); //doesn't have time to see the element
 
         Assert.assertTrue(cartHomePage.getEmptyCartBtn().getText().contains("0.00 грн"));
     }

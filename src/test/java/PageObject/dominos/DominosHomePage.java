@@ -15,7 +15,7 @@ public class DominosHomePage extends BasePage {
     private static final String SING_IN_BTN = "//div[@class='fake-header__sing-in-block']";
     private static final String USER_NAME_BTN = "//input[@name='email']";
     private static final String PASSWORD_BTN = "//input[@name='password']";
-    private static final String LOGIN_BTN = "//form//button[contains(text(), 'Увійти')]";
+    private static final String LOGIN_BTN = "//form//button[contains(text(),'Увійти')]";
     private static final String SELECT_CITY_BTN = "//div[contains(text(), '%s')]";
     private static final String ADD_CART_BTN = "//button[@class='button-cart__order-button']";
 
@@ -44,12 +44,21 @@ public class DominosHomePage extends BasePage {
         return getElementByXpath(String.format(SELECT_CITY_BTN, cityName));
     }
 
-    public List<WebElement> getAddCartPizzaBtn() {
+    public List<WebElement> getAddCartProductBtn() {
         return getElementsByXpath("//button[@class='dp-product-block__cart-button']");
     }
 
     public WebElement getAddCartBtn() {
         return getElementByXpath(ADD_CART_BTN);
+    }
+    public WebElement getSelectOdessaBtn() {
+        return getElementByXpath("//div[contains(text(),'Одеса')]");
+    }
+    public WebElement getCategoryBtn() {
+        return getElementByXpath("//div[@class='main-header__hamburger-menu']");
+    }
+    public WebElement getSaiduBtn() {
+        return getElementByXpath("//span[contains(text(), 'Сайди')]");
     }
 
     public DominosHomePage singIn() {
