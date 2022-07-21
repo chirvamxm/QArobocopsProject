@@ -12,8 +12,13 @@ public class BrainGamingPage extends BasePage {
     }
 
     private static final String SSD = "//h2[text()='Накопичувачі SSD']";
+    private static final String POWER_UNITS = "//h2[text()='Накопичувачі SSD']";
 
     public WebElement getSSD() {
         return driver.findElement(By.xpath(SSD));
+    }
+
+    public WebElement getPowerUnits() {
+        return driver.findElement(By.xpath(POWER_UNITS));
     }
 }
