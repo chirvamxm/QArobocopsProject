@@ -11,8 +11,13 @@ public class BrainHouseholdAppPage extends BasePage {
     }
 
     private static final String BLENDERS = "//div[@class='br-category-block-list']/ul/li/a[contains(text(),'Блендери')]";
+    private static final String VACUUM_CLEANERS = "//div[@class='br-category-block-list']/ul/li/a[contains(text(),'Пилососи')]";
 
     public WebElement getBlenders() {
         return driver.findElement(By.xpath(BLENDERS));
+    }
+
+    public WebElement getVacuumCleaners() {
+        return driver.findElement(By.xpath(VACUUM_CLEANERS));
     }
 }

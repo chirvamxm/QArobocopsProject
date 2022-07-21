@@ -17,6 +17,7 @@ public class BrainHomePage extends BasePage {
     private static final String HOUSEHOLD_APP = "//span[contains(text(),'Побутова техніка')]";
     private static final String GAMING = "//span[contains(text(),'Геймінг')]";
     private static final String ALL_CATEGORIES = "//a/span[text()='Всі категорії']";
+    private static final String FB_ICON = "//a[@class='br-pt-facebook']";
 
 
     // catalog
@@ -91,6 +92,10 @@ public class BrainHomePage extends BasePage {
 
     public WebElement getSelectCity(String cityID) {
         return driver.findElement(By.xpath(String.format(CITY_SELECT, cityID)));
+    }
+
+    public WebElement getFacebookIcon() {
+        return driver.findElement(By.xpath(FB_ICON));
     }
 }
 
