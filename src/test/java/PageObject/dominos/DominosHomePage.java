@@ -60,6 +60,9 @@ public class DominosHomePage extends BasePage {
     public WebElement getSaiduBtn() {
         return getElementByXpath("//span[contains(text(), 'Сайди')]");
     }
+    public WebElement getSelectSocialNetwork(String network) {
+        return getElementByXpath(String.format("//a[@class='%s']", network));
+    }
 
     public DominosHomePage singIn() {
         getSingInBtn().click();
@@ -69,3 +72,4 @@ public class DominosHomePage extends BasePage {
         return this;
     }
 }
+
