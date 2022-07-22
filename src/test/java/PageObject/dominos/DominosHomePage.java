@@ -51,15 +51,19 @@ public class DominosHomePage extends BasePage {
     public WebElement getAddCartBtn() {
         return getElementByXpath(ADD_CART_BTN);
     }
+
     public WebElement getSelectOdessaBtn() {
         return getElementByXpath("//div[contains(text(),'Одеса')]");
     }
+
     public WebElement getCategoryBtn() {
         return getElementByXpath("//div[@class='main-header__hamburger-menu']");
     }
+
     public WebElement getSaiduBtn() {
         return getElementByXpath("//span[contains(text(), 'Сайди')]");
     }
+
     public WebElement getSelectSocialNetwork(String network) {
         return getElementByXpath(String.format("//a[@class='%s']", network));
     }

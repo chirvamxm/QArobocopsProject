@@ -1,6 +1,5 @@
 package Tests.dominos;
 
-import PageObject.dominos.CartHomePage;
 import PageObject.dominos.DominosHomePage;
 import Tests.TestInit;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,7 +23,6 @@ public class TestSocialNetwork extends TestInit {
     @Test(dataProvider = "network_setUp")
     public void testSocialNetwork(String socialNetwork, String assertURL) {
         DominosHomePage dominosHomePage = new DominosHomePage(driver);
-        CartHomePage cartHomePage = new CartHomePage(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         goToSite("https://dominos.ua/");
