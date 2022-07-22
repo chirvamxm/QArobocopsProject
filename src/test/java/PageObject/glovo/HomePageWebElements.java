@@ -4,6 +4,8 @@ import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class HomePageWebElements extends BasePage {
 
     public HomePageWebElements(WebDriver driver) {
@@ -13,13 +15,15 @@ public class HomePageWebElements extends BasePage {
     // HEADER
     public static final String GET_STARTED_BTN = "//button[@id='user-register']";
     public static final String PROFILE_BTN = "//img[@alt='Profile']";
+    public static final String ADD_PAYMENT_CARD = "//div[@class='account-add-credit-card__card']";
     //SIGN IN WINDOW
     public static final String LOG_IN_BTN = "//button[@data-e2e-id='header-user-login']";
     public static final String EMAIL_ADDRESS_FIELD = "//input[@data-test-id='text-field-input'][@name='email']";
     public static final String PASSWORD_FIELD = "//input[@data-test-id='text-field-input'][@name='password']";
     public static final String LOG_IN_WITH_EMAIL_BTN = "//button[@id='login-button']";
     // ADDRESS DELIVERY WINDOW
-    public static final String USE_CURRENT_LOCATION_BTN = "//div[@data-test-id='use-current-location'][@class='current-location']";
+    public static final String CLOSE_LOCATION_WINDOW_BTN = "//span[@class='close-button']";
+    public static final String YOU_LOCATION_BTN = "//div[@class='current-location__text']";
     //RESTAURANTS CATEGORY
     public static final String PRESTO_PIZZA_RESTAURANT_BTN = "//a[@href='/ua/uk/lutsk/presto-pizza-lut/']";
     //PRESTO PIZZA RESTAURANT PAGE
@@ -30,6 +34,12 @@ public class HomePageWebElements extends BasePage {
     public static final String FREE_DELIVERY_MESSAGE_BTN = "//span[@data-test-id='surcharge-button']";
     //FOOTER
     public static final String SOCIAL_NETWORK_BTN = "//a[@href='%s']";
+    //ADDING PAYMENT CARD WINDOW
+    public static final String NAME_ON_CARD_FIELD = "//input[@id='cardholdername']";
+    public static final String NUMBER_OF_CARD_FIELD = "//input[@id='processout-field'][@name='cc-number']";
+    public static final String CARD_DATE_FIELD = "//div[@id='in-month-year']";
+    public static final String CVV_CARD_FIELD = "//div[@id='in-cvc']";
+    public static final String SAVE_FIELD_BTN = "//input[@type='submit']";
 
     public WebElement getStartedBtn() {
         return getElementByXpath(GET_STARTED_BTN);
@@ -37,6 +47,10 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement getProfileBtn() {
         return getElementByXpath(PROFILE_BTN);
+    }
+
+    public WebElement getAddPaymentCardBtn() {
+        return getElementByXpath(ADD_PAYMENT_CARD);
     }
 
     public WebElement getLogIn() {
@@ -55,8 +69,12 @@ public class HomePageWebElements extends BasePage {
         return getElementByXpath(LOG_IN_WITH_EMAIL_BTN);
     }
 
-    public WebElement getUseCurrentLocationBtn() {
-        return getElementByXpath(USE_CURRENT_LOCATION_BTN);
+    public WebElement getCloseLocationWindowBtn() {
+        return getElementByXpath(CLOSE_LOCATION_WINDOW_BTN);
+    }
+
+    public WebElement getYouLocationBtn() {
+        return getElementByXpath(YOU_LOCATION_BTN);
     }
 
     public WebElement getPrestoPizzaBtn() {
@@ -85,5 +103,31 @@ public class HomePageWebElements extends BasePage {
 
     public WebElement getSocialNetworkBtn(String currentNetwork) {
         return getElementByXpath(String.format(SOCIAL_NETWORK_BTN, currentNetwork));
+    }
+
+    public WebElement getNameOnCardField() {
+        return getElementByXpath(NAME_ON_CARD_FIELD);
+    }
+
+    public WebElement getNumberOfCardField() {
+        WebElement iframe = getElementByCssSelector("#card-form > div:nth-child(2) > div.form-item > div > iframe");
+        driver.switchTo().frame(iframe);
+        return getElementByXpath(NUMBER_OF_CARD_FIELD);
+    }
+
+    public WebElement getCardDateField() {
+        WebElement iframe = getElementByCssSelector("#in-month-year > iframe");
+        driver.switchTo().frame(iframe);
+        return getElementByXpath(CARD_DATE_FIELD);
+    }
+
+    public WebElement getCVVField() {
+        WebElement iframe = getElementByCssSelector("#in-cvc > iframe");
+        driver.switchTo().frame(iframe);
+        return getElementByXpath(CVV_CARD_FIELD);
+    }
+
+    public WebElement getSaveCardBtn() {
+        return getElementByXpath(SAVE_FIELD_BTN);
     }
 }
