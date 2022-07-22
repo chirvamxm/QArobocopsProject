@@ -17,7 +17,7 @@ public class BasePage {
     }
 
     public WebElement getElementByXpath(String locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(15000));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
         return driver.findElement(By.xpath(locator));
     }

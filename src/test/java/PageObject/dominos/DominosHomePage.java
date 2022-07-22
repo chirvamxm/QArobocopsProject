@@ -13,11 +13,11 @@ public class DominosHomePage extends BasePage {
 
     private static final String CLOSE_SELECT_CITY_BTN = "//button[@class='dp-modal__close-btn']";
     private static final String SING_IN_BTN = "//div[@class='fake-header__sing-in-block']";
-    private static final String USER_NAME_BTN = "//input[@name='email']";
+    private static final String USER_NAME_BTN = "//input[@placeholder='Логін']";
     private static final String PASSWORD_BTN = "//input[@name='password']";
     private static final String LOGIN_BTN = "//form//button[contains(text(),'Увійти')]";
     private static final String SELECT_CITY_BTN = "//div[contains(text(), '%s')]";
-    private static final String ADD_CART_BTN = "//button[@class='button-cart__order-button']";
+    private static final String ADD_CART_BTN = "//button[contains(text(),'Замовити')]";
 
 
     public WebElement getCloseSelectCityBtn() {
@@ -65,7 +65,7 @@ public class DominosHomePage extends BasePage {
     }
 
     public WebElement getSelectSocialNetwork(String network) {
-        return getElementByXpath(String.format("//a[@class='%s']", network));
+        return getElementByXpath(String.format("//a[@href='%s']", network));
     }
 
     public DominosHomePage singIn() {
