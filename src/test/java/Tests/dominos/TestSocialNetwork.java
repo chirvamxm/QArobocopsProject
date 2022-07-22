@@ -27,10 +27,14 @@ public class TestSocialNetwork extends TestInit {
 
         goToSite("https://dominos.ua/");
         dominosHomePage.getCloseSelectCityBtn().click();
-        dominosHomePage.singIn();
-        sleep(2);
-        js.executeScript("window.scrollBy(0,2000)", "");
-        sleep(2);
+        dominosHomePage.getSingInBtn().click();
+        dominosHomePage.getUserNameBtn().sendKeys("vbaranskiy@inbox.ru\n");
+        dominosHomePage.getPasswordBtn().sendKeys("19121997\n");
+        sleep(2); //doesn't have time to see the element
+        dominosHomePage.getEnterBtn().click();
+        sleep(3); //doesn't have time to see the element
+        js.executeScript("window.scrollBy(0,5500)", "");
+        sleep(1); //doesn't have time to see the element
         dominosHomePage.getSelectSocialNetwork(socialNetwork).click();
         ArrayList<String> tabs2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));

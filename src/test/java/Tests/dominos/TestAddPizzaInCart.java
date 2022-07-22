@@ -27,7 +27,13 @@ public class TestAddPizzaInCart extends TestInit {
         goToSite("https://dominos.ua/");
         dominosHomePage.getSelectCityBtn(CityName).click();
         sleep(3); //doesn't have time to see the element
-        dominosHomePage.singIn();
+        dominosHomePage.getSelectOdessaBtn().click();
+        sleep(1); //doesn't have time to see the element
+        dominosHomePage.getSingInBtn().click();
+        dominosHomePage.getUserNameBtn().sendKeys("vbaranskiy@inbox.ru\n");
+        dominosHomePage.getPasswordBtn().sendKeys("19121997\n");
+        sleep(1); //doesn't have time to see the element
+        dominosHomePage.getEnterBtn().click();
         sleep(3); //doesn't have time to see the element
         js.executeScript("window.scrollBy(0,300)", "");
         dominosHomePage.getAddCartProductBtn().get(0).click();
