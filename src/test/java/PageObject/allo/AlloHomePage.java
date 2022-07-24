@@ -15,6 +15,7 @@ public class AlloHomePage extends BasePage {
     private static final String SMARTPHONES_SUBMENU_BTN = "//a[@class='portal-group__title-link']";
     private static final String BUY_BTN = "//button[@class='v-btn--cart']";
     private static final String CONFIRM_ORDER_BTN = "//button[@class='order-now']";
+    private static final String VACANCIES_PAGE_BTN = "//a[@href='https://work.allo.ua/']";
 
     public WebElement getCityGeoBtn() {
         return getElementByXpath(CITY_GEO_BTN);
@@ -42,5 +43,10 @@ public class AlloHomePage extends BasePage {
     //button "оформити замовлення"
     public WebElement getConfirmOrderBtn() {
         return getElementByXpath(CONFIRM_ORDER_BTN);
+    }
+
+    //button "вакансшї"
+    public WebElement getVacanciesPageBtn() {
+        return getElementByXpath(VACANCIES_PAGE_BTN);
     }
 }
