@@ -5,7 +5,6 @@ import PageObject.allo.AlloVacanciesPage;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 
 public class TestVacanciesBlank extends TestInit {
