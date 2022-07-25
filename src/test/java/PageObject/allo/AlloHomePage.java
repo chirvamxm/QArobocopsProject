@@ -20,7 +20,6 @@ public class AlloHomePage extends BasePage {
     private static final String ERROR_REPORT_BTN = "//div[@class='contact-us-additional-buttons active']//a[@rel='nofollow noopener']";
     private static final String ERROR_REPORT_FIELD = "//div[@class='v-modal__cmp contact-us-error-popup']";
 
-
     public WebElement getCityGeoBtn() {
         return getElementByXpath(CITY_GEO_BTN);
     }
@@ -64,6 +63,7 @@ public class AlloHomePage extends BasePage {
         return getElementsByXpath(ERROR_REPORT_BTN).get(4);
     }
 
+    //field "повідомити про помилку"
     public WebElement getErrorReportField() {
         return getElementByXpath(ERROR_REPORT_FIELD);
     }
