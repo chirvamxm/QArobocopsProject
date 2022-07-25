@@ -19,6 +19,7 @@ public class AlloHomePage extends BasePage {
     private static final String CONTACT_US_BTN = "//div[@class='main-button-block']";
     private static final String ERROR_REPORT_BTN = "//div[@class='contact-us-additional-buttons active']//a[@rel='nofollow noopener']";
     private static final String ERROR_REPORT_FIELD = "//div[@class='v-modal__cmp contact-us-error-popup']";
+    private static final String PLAY_MARKET_BTN = "//a[@title='playmarket']";
 
     public WebElement getCityGeoBtn() {
         return getElementByXpath(CITY_GEO_BTN);
@@ -66,5 +67,10 @@ public class AlloHomePage extends BasePage {
     //field "повідомити про помилку"
     public WebElement getErrorReportField() {
         return getElementByXpath(ERROR_REPORT_FIELD);
+    }
+
+    //button "play market"
+    public WebElement getPlayMarketBtn() {
+        return getElementByXpath(PLAY_MARKET_BTN);
     }
 }
