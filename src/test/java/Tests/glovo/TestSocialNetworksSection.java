@@ -5,7 +5,6 @@ import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 
 public class TestSocialNetworksSection extends TestInit {

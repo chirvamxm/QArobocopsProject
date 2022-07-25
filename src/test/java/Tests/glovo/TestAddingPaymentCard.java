@@ -5,7 +5,6 @@ import PageObject.glovo.HomePageWebElements;
 import Tests.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.util.ArrayList;
