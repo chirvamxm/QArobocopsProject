@@ -16,6 +16,10 @@ public class AlloHomePage extends BasePage {
     private static final String BUY_BTN = "//button[@class='v-btn--cart']";
     private static final String CONFIRM_ORDER_BTN = "//button[@class='order-now']";
     private static final String VACANCIES_PAGE_BTN = "//a[@href='https://work.allo.ua/']";
+    private static final String CONTACT_US_BTN = "//div[@class='main-button-block']";
+    private static final String ERROR_REPORT_BTN = "//div[@class='contact-us-additional-buttons active']//a[@rel='nofollow noopener']";
+    private static final String ERROR_REPORT_FIELD = "//div[@class='v-modal__cmp contact-us-error-popup']";
+
 
     public WebElement getCityGeoBtn() {
         return getElementByXpath(CITY_GEO_BTN);
@@ -48,5 +52,19 @@ public class AlloHomePage extends BasePage {
     //button "вакансшї"
     public WebElement getVacanciesPageBtn() {
         return getElementByXpath(VACANCIES_PAGE_BTN);
+    }
+
+    //button "звязатися з нами"
+    public WebElement getContactUsBtn() {
+        return getElementByXpath(CONTACT_US_BTN);
+    }
+
+    //button "повідомити про помилку"
+    public WebElement getErrorReportBtn() {
+        return getElementsByXpath(ERROR_REPORT_BTN).get(4);
+    }
+
+    public WebElement getErrorReportField() {
+        return getElementByXpath(ERROR_REPORT_FIELD);
     }
 }
