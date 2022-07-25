@@ -8,8 +8,9 @@ import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
+import java.util.ArrayList;
 
-public class TestOrderPriceOnGlovo extends TestInit {
+public class TestAddingPaymentCard extends TestInit {
 
     public void clickBtnAllowInPushPopUp() {
         try {
@@ -24,7 +25,7 @@ public class TestOrderPriceOnGlovo extends TestInit {
     }
 
     @Test
-    public void testOrderPrice() {
+    public void testAddingPaymentCard() {
 
         HomePageWebElements homePageWebElements = new HomePageWebElements(driver);
         HomePageHelper homePageHelper = new HomePageHelper(driver);
@@ -33,14 +34,15 @@ public class TestOrderPriceOnGlovo extends TestInit {
         homePageHelper.signIn();
         homePageWebElements.getYouLocationBtn().click();
         clickBtnAllowInPushPopUp();
-        homePageWebElements.getPrestoPizzaRestaurantBtn().click();
-        homePageWebElements.getPrestoPizzaBtn().click();
-        homePageWebElements.getAddToCartBtn().click();
-        homePageWebElements.getElPoloPizzaBtn().click();
-        homePageWebElements.getAddToCartBtn().click();
-        homePageWebElements.getSalamiPizzaBtn().click();
-        homePageWebElements.getAddToCartBtn().click();
+        homePageWebElements.getProfileBtn().click();
+        homePageWebElements.getAddPaymentCardBtn().click();
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        homePageWebElements.getNameOnCardField().sendKeys("Ivan Ivanov");
+        homePageWebElements.getNumberOfCardField().sendKeys("5168877702365337");
+        homePageWebElements.getCardDateField().sendKeys("0824");
+        homePageWebElements.getCVVField().sendKeys("467");
 
-        Assert.assertTrue(homePageWebElements.freeDeliveryMessage().isDisplayed());
+        Assert.assertTrue(homePageWebElements.getSaveCardBtn().isDisplayed());
     }
 }

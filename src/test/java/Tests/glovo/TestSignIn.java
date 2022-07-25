@@ -18,7 +18,8 @@ public class TestSignIn extends TestInit {
         homePageWebElements.getEmailAddressField().sendKeys("chirvamax@ukr.net");
         homePageWebElements.getPasswordField().sendKeys("qwerty12345");
         homePageWebElements.getLogInWithEmailBtn().click();
-        homePageWebElements.getUseCurrentLocationBtn().click();
+        homePageWebElements.getCloseLocationWindowBtn().click();
+
         Assert.assertTrue(homePageWebElements.getProfileBtn().isDisplayed());
     }
 }

@@ -27,6 +27,7 @@ public class TestSocialNetworksSection extends TestInit {
         homePageWebElements.getSocialNetworkBtn(currentNetwork).click();
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
+
         Assert.assertTrue(getURL().contains(assertURL));
     }
 }
